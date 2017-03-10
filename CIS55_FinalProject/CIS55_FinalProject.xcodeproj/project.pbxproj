@@ -13,6 +13,7 @@
 		3D9E6E4A1E6E108D00A07DF1 /* CIS55_FinalProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D9E6E481E6E108D00A07DF1 /* CIS55_FinalProject.xcdatamodeld */; };
 		3D9E6E4C1E6E108E00A07DF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D9E6E4B1E6E108E00A07DF1 /* Assets.xcassets */; };
 		3D9E6E4F1E6E108E00A07DF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9E6E4D1E6E108E00A07DF1 /* LaunchScreen.storyboard */; };
+		3DF437DE1E735C6D00E8FF8B /* SongListObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF437DD1E735C6D00E8FF8B /* SongListObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3D9E6E4B1E6E108E00A07DF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D9E6E4E1E6E108E00A07DF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D9E6E501E6E108E00A07DF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DF437DD1E735C6D00E8FF8B /* SongListObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongListObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				3D9E6E411E6E108D00A07DF1 /* AppDelegate.swift */,
 				3D9E6E431E6E108D00A07DF1 /* ViewController.swift */,
+				3DF437DD1E735C6D00E8FF8B /* SongListObject.swift */,
 				3D9E6E451E6E108D00A07DF1 /* Main.storyboard */,
 				3D9E6E4B1E6E108E00A07DF1 /* Assets.xcassets */,
 				3D9E6E4D1E6E108E00A07DF1 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D9E6E4A1E6E108D00A07DF1 /* CIS55_FinalProject.xcdatamodeld in Sources */,
+				3DF437DE1E735C6D00E8FF8B /* SongListObject.swift in Sources */,
 				3D9E6E441E6E108D00A07DF1 /* ViewController.swift in Sources */,
 				3D9E6E421E6E108D00A07DF1 /* AppDelegate.swift in Sources */,
 			);
@@ -301,6 +305,7 @@
 				3D9E6E551E6E108E00A07DF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

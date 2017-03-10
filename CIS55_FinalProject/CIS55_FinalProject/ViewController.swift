@@ -7,14 +7,51 @@
 //
 
 import UIKit
+import AVFoundation
+
 
 class ViewController: UIViewController {
+    
     @IBOutlet weak var plannerBtn: UIButton!
     @IBOutlet weak var progressBtn: UIButton!
     @IBOutlet weak var feelingBtn: UIButton!
     @IBOutlet weak var quickStart: UIButton!
     @IBOutlet weak var timedMeditationBtn: UIButton!
 
+    var player: AVAudioPlayer? = nil
+    var mySongList =
+        [
+            SongListObject(songFileName: NSDataAsset(name: "Guided")!, songType: "guided", songEmotion: "sad")
+            ,SongListObject(songFileName: NSDataAsset(name:"Nature")!, songType: "sounds", songEmotion: "anxious")
+            ,SongListObject(songFileName: NSDataAsset(name: "RelaxingMusic")!, songType: "sounds", songEmotion: "calm")
+    ]
+    
+    @IBAction func HowAreYouFeeling(_ sender: Any) {
+     
+        playSound(thisSong: mySongList[0].songFileName)
+    
+    }
+    
+    func playSound(thisSong: NSDataAsset?) {
+        
+        
+        guard let sound = thisSong else {
+            print("asset not found")
+            return
+        }
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            player = try AVAudioPlayer(data: sound.data, fileTypeHint: AVFileTypeMPEGLayer3)
+            
+            player?.play()
+        } catch let error as NSError {
+            print("error: \(error.localizedDescription)")
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
