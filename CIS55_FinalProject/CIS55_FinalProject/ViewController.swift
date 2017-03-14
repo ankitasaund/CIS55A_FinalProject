@@ -12,6 +12,9 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
+    //CHANGE
+    var asdasd = "Dog"
+    
     @IBOutlet weak var plannerBtn: UIButton!
     @IBOutlet weak var progressBtn: UIButton!
     @IBOutlet weak var feelingBtn: UIButton!
