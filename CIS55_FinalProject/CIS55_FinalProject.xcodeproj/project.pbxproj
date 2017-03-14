@@ -14,6 +14,11 @@
 		3D9E6E4C1E6E108E00A07DF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D9E6E4B1E6E108E00A07DF1 /* Assets.xcassets */; };
 		3D9E6E4F1E6E108E00A07DF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9E6E4D1E6E108E00A07DF1 /* LaunchScreen.storyboard */; };
 		3DF437DE1E735C6D00E8FF8B /* SongListObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF437DD1E735C6D00E8FF8B /* SongListObject.swift */; };
+		8D6B52601E778FDD00B55E17 /* Ambient-Astral-Travel.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8D6B525C1E778FDD00B55E17 /* Ambient-Astral-Travel.mp3 */; };
+		8D6B52611E778FDD00B55E17 /* Magic-forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8D6B525D1E778FDD00B55E17 /* Magic-forest.mp3 */; };
+		8D6B52621E778FDD00B55E17 /* Meditation-music-free.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8D6B525E1E778FDD00B55E17 /* Meditation-music-free.mp3 */; };
+		8D6B52631E778FDD00B55E17 /* Nature-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8D6B525F1E778FDD00B55E17 /* Nature-music.mp3 */; };
+		8D6B52651E7790B800B55E17 /* playMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6B52641E7790B800B55E17 /* playMusicViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		3D9E6E4E1E6E108E00A07DF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D9E6E501E6E108E00A07DF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DF437DD1E735C6D00E8FF8B /* SongListObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongListObject.swift; sourceTree = "<group>"; };
+		8D6B525C1E778FDD00B55E17 /* Ambient-Astral-Travel.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Ambient-Astral-Travel.mp3"; path = "../../../audioPlayer/Songs/Ambient-Astral-Travel.mp3"; sourceTree = "<group>"; };
+		8D6B525D1E778FDD00B55E17 /* Magic-forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Magic-forest.mp3"; path = "../../../audioPlayer/Songs/Magic-forest.mp3"; sourceTree = "<group>"; };
+		8D6B525E1E778FDD00B55E17 /* Meditation-music-free.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Meditation-music-free.mp3"; path = "../../../audioPlayer/Songs/Meditation-music-free.mp3"; sourceTree = "<group>"; };
+		8D6B525F1E778FDD00B55E17 /* Nature-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Nature-music.mp3"; path = "../../../audioPlayer/Songs/Nature-music.mp3"; sourceTree = "<group>"; };
+		8D6B52641E7790B800B55E17 /* playMusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = playMusicViewController.swift; path = "../../../../../gitlab/CIS55A_FinalProject-master/CIS55_FinalProject/CIS55_FinalProject/playMusicViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +71,26 @@
 				3D9E6E411E6E108D00A07DF1 /* AppDelegate.swift */,
 				3D9E6E431E6E108D00A07DF1 /* ViewController.swift */,
 				3DF437DD1E735C6D00E8FF8B /* SongListObject.swift */,
+				8D6B52641E7790B800B55E17 /* playMusicViewController.swift */,
 				3D9E6E451E6E108D00A07DF1 /* Main.storyboard */,
 				3D9E6E4B1E6E108E00A07DF1 /* Assets.xcassets */,
 				3D9E6E4D1E6E108E00A07DF1 /* LaunchScreen.storyboard */,
 				3D9E6E501E6E108E00A07DF1 /* Info.plist */,
 				3D9E6E481E6E108D00A07DF1 /* CIS55_FinalProject.xcdatamodeld */,
+				8D6B525B1E778FCB00B55E17 /* Songs */,
 			);
 			path = CIS55_FinalProject;
+			sourceTree = "<group>";
+		};
+		8D6B525B1E778FCB00B55E17 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				8D6B525C1E778FDD00B55E17 /* Ambient-Astral-Travel.mp3 */,
+				8D6B525D1E778FDD00B55E17 /* Magic-forest.mp3 */,
+				8D6B525E1E778FDD00B55E17 /* Meditation-music-free.mp3 */,
+				8D6B525F1E778FDD00B55E17 /* Nature-music.mp3 */,
+			);
+			name = Songs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,7 +154,11 @@
 			files = (
 				3D9E6E4F1E6E108E00A07DF1 /* LaunchScreen.storyboard in Resources */,
 				3D9E6E4C1E6E108E00A07DF1 /* Assets.xcassets in Resources */,
+				8D6B52621E778FDD00B55E17 /* Meditation-music-free.mp3 in Resources */,
+				8D6B52601E778FDD00B55E17 /* Ambient-Astral-Travel.mp3 in Resources */,
 				3D9E6E471E6E108D00A07DF1 /* Main.storyboard in Resources */,
+				8D6B52611E778FDD00B55E17 /* Magic-forest.mp3 in Resources */,
+				8D6B52631E778FDD00B55E17 /* Nature-music.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D6B52651E7790B800B55E17 /* playMusicViewController.swift in Sources */,
 				3D9E6E4A1E6E108D00A07DF1 /* CIS55_FinalProject.xcdatamodeld in Sources */,
 				3DF437DE1E735C6D00E8FF8B /* SongListObject.swift in Sources */,
 				3D9E6E441E6E108D00A07DF1 /* ViewController.swift in Sources */,

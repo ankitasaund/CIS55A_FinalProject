@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D91F8282E52B821F1DCDCB0B39A61FF0B7CBC8AD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D91F8282E52B821F1DCDCB0B39A61FF0B7CBC8AD" : 9223372036854775807,
+    "78152019ACA422FAABEC6F569C0782BF1D67929F" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A9ACFD07-0F35-456D-B938-172DC0D56089",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D91F8282E52B821F1DCDCB0B39A61FF0B7CBC8AD" : "CIS55A_FinalProject\/",
+    "78152019ACA422FAABEC6F569C0782BF1D67929F" : "..\/..\/gitlab\/CIS55A_FinalProject-master\/CIS55_FinalProject"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CIS55_FinalProject",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CIS55_FinalProject\/CIS55_FinalProject.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ankitasaund\/CIS55_FinalProject",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "78152019ACA422FAABEC6F569C0782BF1D67929F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/janbthomas\/CIS55A_FinalProject.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D91F8282E52B821F1DCDCB0B39A61FF0B7CBC8AD"
+    }
+  ]
+}

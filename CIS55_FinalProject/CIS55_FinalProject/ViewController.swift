@@ -85,6 +85,13 @@ class ViewController: UIViewController {
         button.layer.masksToBounds = true
  
     }
+    
+    @IBAction func quickStart(_ sender: Any) {
+
+        performSegue(withIdentifier: "quickPlayMusic",
+                     sender: self)
+    }
+
 
 
 }
