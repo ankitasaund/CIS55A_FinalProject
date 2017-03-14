@@ -106,14 +106,14 @@ func getSongName() -> [String] {
     {
         audioPlayer.pause()
     }
-}
+   }
 
  
     
     @IBAction func replay(_ sender: Any) {
     
     audioPlayer.currentTime = 0
-}
+    }
 
 //control volume using slider
 
@@ -122,6 +122,7 @@ func getSongName() -> [String] {
 
     audioPlayer.volume = sender.value
     
-}
+   }
 
-}
+    
+ }
