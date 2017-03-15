@@ -12,8 +12,6 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
-    //CHANGE
-    var asdasd = "Dog"
     
     @IBOutlet weak var plannerBtn: UIButton!
     @IBOutlet weak var progressBtn: UIButton!
@@ -22,17 +20,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var timedMeditationBtn: UIButton!
 
     var player: AVAudioPlayer? = nil
+    
+
     var mySongList =
-        [
-            SongListObject(songFileName: NSDataAsset(name: "Guided")!, songType: "guided", songEmotion: "sad")
-            ,SongListObject(songFileName: NSDataAsset(name:"Nature")!, songType: "sounds", songEmotion: "anxious")
-            ,SongListObject(songFileName: NSDataAsset(name: "RelaxingMusic")!, songType: "sounds", songEmotion: "calm")
+    [
+        SongListObject(songFileName: NSDataAsset(name: "Guided")!, songType: "guided", songEmotion: "sad", songImage: #imageLiteral(resourceName: "natureback"))
+            ,SongListObject(songFileName: NSDataAsset(name:"Nature")!, songType: "sounds", songEmotion: "anxious", songImage: #imageLiteral(resourceName: "natureback-1"))
+        ,SongListObject(songFileName: NSDataAsset(name: "RelaxingMusic")!, songType: "sounds", songEmotion: "calm", songImage: #imageLiteral(resourceName: "natureback"))
     ]
     
     @IBAction func HowAreYouFeeling(_ sender: Any) {
      
-        playSound(thisSong: mySongList[0].songFileName)
-    
+        //playSound(thisSong: mySongList[0].songFileName)
     }
     
     func playSound(thisSong: NSDataAsset?) {
@@ -91,8 +90,6 @@ class ViewController: UIViewController {
         performSegue(withIdentifier: "quickPlayMusic",
                      sender: self)
     }
-
-
 
 }
 
