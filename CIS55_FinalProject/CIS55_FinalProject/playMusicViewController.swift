@@ -63,9 +63,13 @@ class playMusicViewController: UIViewController {
                 currentUrl = url
             }
             do {
-                // print(url)
+                //stop earlier playing song if any
+                if isPlaying{
+                    audioPlayer.stop()
+                }
                 audioPlayer = try AVAudioPlayer(contentsOf: currentUrl)
                 audioPlayer.play()
+                isPlaying = true
                 var audioPlayerTimer = Timer()
                 //set the timer for 300 sec/5 min
                 audioPlayerTimer = Timer.scheduledTimer(timeInterval: 300, target: self, selector: "stopAfter5minutes", userInfo: nil, repeats: false)
@@ -122,29 +126,23 @@ class playMusicViewController: UIViewController {
         return songPathsArr
     }  // func getSongName ends
     
-    
-    
     @IBAction func pause(_ sender: Any) {
         
-        if audioPlayer.isPlaying
+        if isPlaying
         {
             isPaused = true
             audioPlayer.pause()
         }
     }
     
-    
-    
     @IBAction func replay(_ sender: Any) {
-        if currentUrl != nil{
+        if isPlaying{
             audioPlayer.currentTime = 0
             
         }
     }
     
     //control volume using slider
-    
-    
     @IBAction func controlVolume(_ sender: UISlider) {
         
         audioPlayer.volume = sender.value
