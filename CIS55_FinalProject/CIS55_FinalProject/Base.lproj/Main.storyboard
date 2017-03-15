@@ -198,6 +198,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="playbutton" destination="ewU-2i-zeM" id="upX-cZ-NWn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hGL-qK-fDP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

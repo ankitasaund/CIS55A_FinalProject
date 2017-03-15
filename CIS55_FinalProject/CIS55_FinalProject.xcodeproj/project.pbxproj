@@ -20,6 +20,7 @@
 		3DF437E81E797EC400E8FF8B /* feelingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF437E71E797EC400E8FF8B /* feelingsTableViewController.swift */; };
 		8DB180ED1E78842800977454 /* playMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB180EC1E78842800977454 /* playMusicViewController.swift */; };
 		8DB180F11E788CC300977454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DB180F01E788CC300977454 /* Assets.xcassets */; };
+		8DC7495B1E790D39005B7AE5 /* projectUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC7495A1E790D39005B7AE5 /* projectUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		3DF437E71E797EC400E8FF8B /* feelingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = feelingsTableViewController.swift; sourceTree = "<group>"; };
 		8DB180EC1E78842800977454 /* playMusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = playMusicViewController.swift; sourceTree = "<group>"; };
 		8DB180F01E788CC300977454 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8DC7495A1E790D39005B7AE5 /* projectUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = projectUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				3D9E6E501E6E108E00A07DF1 /* Info.plist */,
 				3D9E6E481E6E108D00A07DF1 /* CIS55_FinalProject.xcdatamodeld */,
 				8D6B525B1E778FCB00B55E17 /* Songs */,
+				8DC7495A1E790D39005B7AE5 /* projectUtil.swift */,
 			);
 			path = CIS55_FinalProject;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				3DDD74211E79A41F00EF818C /* FeelingsTableViewCell.swift in Sources */,
 				3D9E6E4A1E6E108D00A07DF1 /* CIS55_FinalProject.xcdatamodeld in Sources */,
 				3DF437DE1E735C6D00E8FF8B /* SongListObject.swift in Sources */,
+				8DC7495B1E790D39005B7AE5 /* projectUtil.swift in Sources */,
 				3D9E6E441E6E108D00A07DF1 /* ViewController.swift in Sources */,
 				3DF437E81E797EC400E8FF8B /* feelingsTableViewController.swift in Sources */,
 				3D9E6E421E6E108D00A07DF1 /* AppDelegate.swift in Sources */,

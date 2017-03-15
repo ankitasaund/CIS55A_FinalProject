@@ -8,16 +8,25 @@
 
 import UIKit
 import AVFoundation
+//import projectUtil
 
 class playMusicViewController: UIViewController {
     
     var audioPlayer : AVAudioPlayer!
-    
     var isPlaying = false
+    var isPaused = false
+    
+    var currentUrl : URL!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //add background to view
+        /*  let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+         backgroundImage.image = #imageLiteral(resourceName: "natureback")
+         self.view.insertSubview(backgroundImage, at: 0)
+         backgroundImage.contentMode = UIViewContentMode.scaleAspectFill;
+         
+         */
         // Do any additional setup after loading the view.
     }
     
@@ -38,91 +47,108 @@ class playMusicViewController: UIViewController {
      */
     
     @IBAction func play(_ sender: Any) {
-    
-    var songPathsArr = getSongName()
-    let range: UInt32 = UInt32(songPathsArr.count)
-    let number = Int(arc4random_uniform(range))
-    
-    //print(songPathsArr[number])
-    let path = Bundle.main.path(forResource: songPathsArr[number] as String, ofType: "mp3")
-    //print(path)
-    
-    let url = NSURL.fileURL(withPath: path!)
-    
-    do {
-    // print(url)
-    audioPlayer = try AVAudioPlayer(contentsOf: url)
-    audioPlayer.play()
-    var audioPlayerTimer = Timer()
-    //set the timer for 300 sec/5 min
-    audioPlayerTimer = Timer.scheduledTimer(timeInterval: 300, target: self, selector: "stopAfter5minutes", userInfo: nil, repeats: false)
-    func stopAfter5minutes(){
-    audioPlayer.stop()
-    } //do ends
-    } catch {
-    // couldn't load file :(
-    print("unable to play")
-    }
-}  // func play ends
-
-//get the song names from folder Songs
-func getSongName() -> [String] {
-    let folderURL = URL(fileURLWithPath: Bundle.main.resourcePath!)
-    var songPathsArr = [String]()
-    //get the name of all songs
-    do{
-        let songPath = try FileManager.default.contentsOfDirectory(at: folderURL, includingPropertiesForKeys: nil, options: .skipsHiddenFiles)
-        for song in songPath
-        {
-            //convert URl to string
-            var mySong = song.absoluteString
-            
-            //make sure there is song
-            if mySong.contains(".mp3")
+        
+        if projectUtil.originatingScreen == "quickstart" {
+            if !isPaused
             {
-                //print(mySong)
-                let findString = mySong.components(separatedBy: "/")
-                mySong = findString[findString.count-1]
-                mySong = mySong.replacingOccurrences(of: "%20", with: " ")
-                mySong = mySong.replacingOccurrences(of: ".mp3", with: "")
-                //print(mySong)
+                var songPathsArr = getSongName()
+                let range: UInt32 = UInt32(songPathsArr.count)
+                let number = Int(arc4random_uniform(range))
                 
-                songPathsArr.append(mySong)
-            }//if ends
+                //print(songPathsArr[number])
+                let path = Bundle.main.path(forResource: songPathsArr[number] as String, ofType: "mp3")
+                //print(path)
+                
+                let url = NSURL.fileURL(withPath: path!)
+                currentUrl = url
+            }
+            do {
+                // print(url)
+                audioPlayer = try AVAudioPlayer(contentsOf: currentUrl)
+                audioPlayer.play()
+                var audioPlayerTimer = Timer()
+                //set the timer for 300 sec/5 min
+                audioPlayerTimer = Timer.scheduledTimer(timeInterval: 300, target: self, selector: "stopAfter5minutes", userInfo: nil, repeats: false)
+                func stopAfter5minutes(){
+                    audioPlayer.stop()
+                }
+            } catch {
+                // couldn't load file :(
+                print("unable to play")
+            }//do catch ends
             
-        } //for ends
-    } //do ends
-    catch{
-        print("File not found")
-    }
-    return songPathsArr
-}  // func getSongName ends
-
-
+        }
+            // nodira's code
+        else if projectUtil.originatingScreen == "timedmedi" {
+            
+        }
+            
+            // Jane's code
+        else if projectUtil.originatingScreen == "hrufeeling" {
+            
+        }
+    }  // func play ends
+    
+    //get the song names from folder Songs
+    func getSongName() -> [String] {
+        let folderURL = URL(fileURLWithPath: Bundle.main.resourcePath!)
+        var songPathsArr = [String]()
+        //get the name of all songs
+        do{
+            let songPath = try FileManager.default.contentsOfDirectory(at: folderURL, includingPropertiesForKeys: nil, options: .skipsHiddenFiles)
+            for song in songPath
+            {
+                //convert URl to string
+                var mySong = song.absoluteString
+                
+                //make sure there is song
+                if mySong.contains(".mp3")
+                {
+                    //print(mySong)
+                    let findString = mySong.components(separatedBy: "/")
+                    mySong = findString[findString.count-1]
+                    mySong = mySong.replacingOccurrences(of: "%20", with: " ")
+                    mySong = mySong.replacingOccurrences(of: ".mp3", with: "")
+                    //print(mySong)
+                    
+                    songPathsArr.append(mySong)
+                }//if ends
+                
+            } //for ends
+        } //do ends
+        catch{
+            print("File not found")
+        }
+        return songPathsArr
+    }  // func getSongName ends
+    
+    
     
     @IBAction func pause(_ sender: Any) {
-    
-    if audioPlayer.isPlaying
-    {
-        audioPlayer.pause()
+        
+        if audioPlayer.isPlaying
+        {
+            isPaused = true
+            audioPlayer.pause()
+        }
     }
-   }
-
- 
+    
+    
     
     @IBAction func replay(_ sender: Any) {
-    
-    audioPlayer.currentTime = 0
+        if currentUrl != nil{
+            audioPlayer.currentTime = 0
+            
+        }
     }
-
-//control volume using slider
-
-
+    
+    //control volume using slider
+    
+    
     @IBAction func controlVolume(_ sender: UISlider) {
-
-    audioPlayer.volume = sender.value
+        
+        audioPlayer.volume = sender.value
+        
+    }
     
-   }
-
-    
- }
+}

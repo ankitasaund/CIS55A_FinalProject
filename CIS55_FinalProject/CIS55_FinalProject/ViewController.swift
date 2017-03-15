@@ -86,7 +86,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func quickStart(_ sender: Any) {
-
+        
+        projectUtil.originatingScreen = "quickstart"
         performSegue(withIdentifier: "quickPlayMusic",
                      sender: self)
     }
