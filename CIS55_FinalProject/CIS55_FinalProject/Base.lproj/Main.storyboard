@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zT3-Hg-IM1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zT3-Hg-IM1">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="72"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cj9-eG-b0D" id="hwj-oU-ra0">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aYL-9h-s2T">
@@ -115,6 +115,9 @@
                                 <state key="normal" title="Progress">
                                     <color key="titleColor" red="0.40008461475372314" green="0.40007656812667847" blue="0.40008202195167542" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="9ag-Gf-laW" kind="show" identifier="ProgressSegue" id="IEW-aR-9I2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wf4-Sq-1E3">
                                 <rect key="frame" x="287" y="377" width="78" height="78"/>
@@ -204,7 +207,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hGL-qK-fDP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4420" y="97"/>
+            <point key="canvasLocation" x="4418" y="123"/>
         </scene>
         <!--Timed View Controller-->
         <scene sceneID="cLn-TE-7PI">
@@ -267,13 +270,67 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OYB-zS-zoP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3025" y="720"/>
+            <point key="canvasLocation" x="3025" y="719"/>
         </scene>
-        <!--Home-->
+        <!--Progress View Controller-->
+        <scene sceneID="AQX-D6-IzA">
+            <objects>
+                <viewController id="9ag-Gf-laW" customClass="ProgressViewController" customModule="CIS55_FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WbS-1i-664"/>
+                        <viewControllerLayoutGuide type="bottom" id="pER-k8-nMG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4IK-nn-vWB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Wf-bQ-cDZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1996" y="1064"/>
+        </scene>
+        <!--About Us-->
+        <scene sceneID="RDX-gF-abG">
+            <objects>
+                <navigationController id="bWa-po-9ja" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="About Us" image="User Groups-50" id="bED-SV-0DF"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yH0-5s-H38">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="T33-8G-NVv" kind="relationship" relationship="rootViewController" id="4Kb-4E-AVJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5cw-Z1-QgR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071" y="1801"/>
+        </scene>
+        <!--About Us View Controller-->
+        <scene sceneID="tpk-wV-JGg">
+            <objects>
+                <viewController id="T33-8G-NVv" customClass="AboutUsViewController" customModule="CIS55_FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bom-GU-Hl8"/>
+                        <viewControllerLayoutGuide type="bottom" id="cZX-38-KPs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VnT-9w-Sg3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yvN-5B-cyy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Up-hc-fDr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2220" y="1800"/>
+        </scene>
+        <!--Meditate-->
         <scene sceneID="4GV-sH-O8g">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="va1-pQ-Hst" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="KFw-yh-wHP"/>
+                    <tabBarItem key="tabBarItem" title="Meditate" image="Meditation Guru-50" id="G6k-aT-a5Y"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BYk-yL-Mh6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -300,14 +357,17 @@
                     </tabBar>
                     <connections>
                         <segue destination="va1-pQ-Hst" kind="relationship" relationship="viewControllers" id="nLM-DR-DkW"/>
+                        <segue destination="bWa-po-9ja" kind="relationship" relationship="viewControllers" id="MLG-H8-Z42"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VLP-Bq-cp7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+            <point key="canvasLocation" x="-343" y="123"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Meditation Guru-50" width="25" height="25"/>
+        <image name="User Groups-50" width="25" height="25"/>
         <image name="natureback-1" width="2880" height="1800"/>
         <image name="pause" width="600" height="600"/>
         <image name="play" width="300" height="300"/>
@@ -316,6 +376,6 @@
         <image name="volume" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Hvg-gJ-naZ"/>
+        <segue reference="ohb-Ii-DGl"/>
     </inferredMetricsTieBreakers>
 </document>
