@@ -53,7 +53,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ao-mJ-wVT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3025" y="-469"/>
+            <point key="canvasLocation" x="3426" y="-216"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -207,7 +207,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hGL-qK-fDP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4418" y="123"/>
+            <point key="canvasLocation" x="4839" y="123"/>
         </scene>
         <!--Timed View Controller-->
         <scene sceneID="cLn-TE-7PI">
@@ -270,7 +270,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OYB-zS-zoP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3025" y="719"/>
+            <point key="canvasLocation" x="3425" y="489"/>
         </scene>
         <!--Progress View Controller-->
         <scene sceneID="AQX-D6-IzA">
@@ -376,6 +376,6 @@
         <image name="volume" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ohb-Ii-DGl"/>
+        <segue reference="Hvg-gJ-naZ"/>
     </inferredMetricsTieBreakers>
 </document>
