@@ -15,6 +15,7 @@ class playMusicViewController: UIViewController {
     var audioPlayer : AVAudioPlayer!
     var isPlaying = false
     var isPaused = false
+    var timed = 0.0
     
     var currentUrl : URL!
     
@@ -83,7 +84,43 @@ class playMusicViewController: UIViewController {
             
         }
             // nodira's code
-        else if projectUtil.originatingScreen == "timedmedi" {
+        else if projectUtil.originatingScreen == "timedMedi" {
+            if !isPaused
+            {
+                var songPathsArr = getSongName()
+                let range: UInt32 = UInt32(songPathsArr.count)
+                let number = Int(arc4random_uniform(range))
+                
+                //print(songPathsArr[number])
+                let path = Bundle.main.path(forResource: songPathsArr[number] as String, ofType: "mp3")
+                //print(path)
+                
+                let url = NSURL.fileURL(withPath: path!)
+                currentUrl = url
+            }
+            do {
+                //stop earlier playing song if any
+                if isPlaying{
+                    audioPlayer.stop()
+                }
+                audioPlayer = try AVAudioPlayer(contentsOf: currentUrl)
+                audioPlayer.play()
+                isPlaying = true
+                var audioPlayerTimer = Timer()
+                //set the timer for 300 sec/5 min
+                audioPlayerTimer = Timer.scheduledTimer(timeInterval: timed, target: self, selector: "stopAfter5minutes", userInfo: nil, repeats: false)
+                func stopAfter5minutes(){
+                    audioPlayer.stop()
+                }
+            } catch {
+                // couldn't load file :(
+                print("unable to play")
+            }//do catch ends
+
+            
+            
+            
+            
             
         }
             
