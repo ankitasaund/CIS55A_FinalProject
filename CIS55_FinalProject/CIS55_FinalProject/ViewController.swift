@@ -8,9 +8,10 @@
 
 import UIKit
 import AVFoundation
+import CoreData
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, NSFetchedResultsControllerDelegate  {
     
     
     @IBOutlet weak var plannerBtn: UIButton!
@@ -20,14 +21,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var timedMeditationBtn: UIButton!
 
     var player: AVAudioPlayer? = nil
-    
+    var myPoints : [ProgressPointsObjectMO] = []
 
     var mySongList =
     [
-        SongListObject(songFileName: NSDataAsset(name: "Guided")!, songType: "guided", songEmotion: "sad", songImage: #imageLiteral(resourceName: "natureback"))
-            ,SongListObject(songFileName: NSDataAsset(name:"Nature")!, songType: "sounds", songEmotion: "anxious", songImage: #imageLiteral(resourceName: "natureback-1"))
-        ,SongListObject(songFileName: NSDataAsset(name: "RelaxingMusic")!, songType: "sounds", songEmotion: "calm", songImage: #imageLiteral(resourceName: "natureback"))
+        SongListObject(songFileName: NSDataAsset(name: "Guided")!, songType: "guided", songEmotion: "sad", songImage: #imageLiteral(resourceName: "natureback"), songDuration: 5)
+        ,SongListObject(songFileName: NSDataAsset(name:"Nature")!, songType: "sounds", songEmotion: "anxious", songImage: #imageLiteral(resourceName: "natureback-1"), songDuration: 10)
+        ,SongListObject(songFileName: NSDataAsset(name: "RelaxingMusic")!, songType: "sounds", songEmotion: "calm", songImage: #imageLiteral(resourceName: "natureback"), songDuration: 15)
     ]
+    
+    var fetchResultsController : NSFetchedResultsController<ProgressPointsObjectMO>!
     
     @IBAction func HowAreYouFeeling(_ sender: Any) {
      
@@ -70,6 +73,34 @@ class ViewController: UIViewController {
         self.view.insertSubview(backgroundImage, at: 0)
         backgroundImage.contentMode = UIViewContentMode.scaleAspectFill;
 
+        //JBT All lines until the end of the function
+        
+        let fetchRequest = NSFetchRequest<ProgressPointsObjectMO>(entityName: "ProgressPointsObject")
+        
+        let sortDescriptor = NSSortDescriptor(key: "progressDate", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        
+        
+        if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
+            let context = appDelegate.persistentContainer.viewContext
+            fetchResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+            fetchResultsController.delegate = self
+            do {
+                try fetchResultsController.performFetch()
+                if let fetchedObjects = fetchResultsController.fetchedObjects {
+                    myPoints = fetchedObjects
+                }
+            }
+            catch {
+                print(error)
+            }
+        }
+        
+        for thisProgressPoints in myPoints {
+            print("Points for today \(thisProgressPoints.progressDate) \(thisProgressPoints.progressPoints)\n")
+        }
+ 
+        
     }
 
     override func didReceiveMemoryWarning() {

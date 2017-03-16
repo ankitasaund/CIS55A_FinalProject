@@ -15,6 +15,7 @@
 		3DDD74211E79A41F00EF818C /* FeelingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD74201E79A41F00EF818C /* FeelingsTableViewCell.swift */; };
 		3DDD74261E79A9C000EF818C /* 04 Zebra Finches in the outback.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DDD74231E79A9C000EF818C /* 04 Zebra Finches in the outback.mp3 */; };
 		3DDD74271E79A9C000EF818C /* GoksuMarshes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DDD74241E79A9C000EF818C /* GoksuMarshes.mp3 */; };
+		3DDD742B1E7AEFC400EF818C /* ProgressPointsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD742A1E7AEFC400EF818C /* ProgressPointsObject.swift */; };
 		3DF437DE1E735C6D00E8FF8B /* SongListObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF437DD1E735C6D00E8FF8B /* SongListObject.swift */; };
 		3DF437E81E797EC400E8FF8B /* feelingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF437E71E797EC400E8FF8B /* feelingsTableViewController.swift */; };
 		6D87F66D1E7A366A0050D755 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D87F66C1E7A366A0050D755 /* ProgressViewController.swift */; };
@@ -36,6 +37,7 @@
 		3DDD74201E79A41F00EF818C /* FeelingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeelingsTableViewCell.swift; sourceTree = "<group>"; };
 		3DDD74231E79A9C000EF818C /* 04 Zebra Finches in the outback.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "04 Zebra Finches in the outback.mp3"; path = "Songs/04 Zebra Finches in the outback.mp3"; sourceTree = "<group>"; };
 		3DDD74241E79A9C000EF818C /* GoksuMarshes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = GoksuMarshes.mp3; path = Songs/GoksuMarshes.mp3; sourceTree = "<group>"; };
+		3DDD742A1E7AEFC400EF818C /* ProgressPointsObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressPointsObject.swift; sourceTree = "<group>"; };
 		3DF437DD1E735C6D00E8FF8B /* SongListObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongListObject.swift; sourceTree = "<group>"; };
 		3DF437E71E797EC400E8FF8B /* feelingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = feelingsTableViewController.swift; sourceTree = "<group>"; };
 		6D87F66C1E7A366A0050D755 /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				3D9E6E4D1E6E108E00A07DF1 /* LaunchScreen.storyboard */,
 				3D9E6E501E6E108E00A07DF1 /* Info.plist */,
 				3D9E6E481E6E108D00A07DF1 /* CIS55_FinalProject.xcdatamodeld */,
+				3DDD742A1E7AEFC400EF818C /* ProgressPointsObject.swift */,
 				8D6B525B1E778FCB00B55E17 /* Songs */,
 				8DC7495A1E790D39005B7AE5 /* projectUtil.swift */,
 			);
@@ -189,6 +192,7 @@
 				D527B12C1E79EA300015ACC6 /* TimedViewController.swift in Sources */,
 				3DF437E81E797EC400E8FF8B /* feelingsTableViewController.swift in Sources */,
 				6DD3C07A1E7A40A3007AD70C /* AboutUsViewController.swift in Sources */,
+				3DDD742B1E7AEFC400EF818C /* ProgressPointsObject.swift in Sources */,
 				3D9E6E421E6E108D00A07DF1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

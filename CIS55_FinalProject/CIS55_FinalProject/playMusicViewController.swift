@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import CoreData
 //import projectUtil
 
 class playMusicViewController: UIViewController {
@@ -16,8 +17,11 @@ class playMusicViewController: UIViewController {
     var isPlaying = false
     var isPaused = false
     var timed = 0.0
+    var isNew = true
     
     var currentUrl : URL!
+    var newProgressPoints : ProgressPointsObjectMO!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -126,7 +130,14 @@ class playMusicViewController: UIViewController {
             
             // Jane's code
         else if projectUtil.originatingScreen == "hrufeeling" {
-            
+            if (audioPlayer == nil) {
+                addPoints(numOfPoints: Int(projectUtil.duration), totalTime: Int(projectUtil.duration))
+                playSoundAsset(thisSong : projectUtil.songFileName)
+            }
+            else {
+                audioPlayer.play()
+            }
+            isPlaying = true
         }
     }  // func play ends
     
@@ -185,5 +196,40 @@ class playMusicViewController: UIViewController {
         audioPlayer.volume = sender.value
         
     }
+    func addPoints(numOfPoints : Int, totalTime : Int) {
+        if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
+            newProgressPoints = ProgressPointsObjectMO(context: appDelegate.persistentContainer.viewContext)
+            
+            newProgressPoints.progressTotalTime = Int16(totalTime)
+            newProgressPoints.progressPoints = Int16(numOfPoints)
+            newProgressPoints.progressDate = Date() as NSDate?
+            appDelegate.saveContext()
+            print("Progress Points Added")
+            
+            
+        }
+
+    }
+    func playSoundAsset(thisSong: NSDataAsset?) {
+        
+        
+        guard let sound = thisSong else {
+            print("asset not found")
+            return
+        }
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            audioPlayer = try AVAudioPlayer(data: sound.data, fileTypeHint: AVFileTypeMPEGLayer3)
+            
+            audioPlayer?.play()
+        } catch let error as NSError {
+            print("error: \(error.localizedDescription)")
+        }
+    }
+    
+
     
 }
