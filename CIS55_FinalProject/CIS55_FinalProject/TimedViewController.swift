@@ -46,21 +46,21 @@ class TimedViewController: UIViewController {
     }
 
     @IBAction func meditation3min(_ sender: Any) {
-        projectUtil.originatingScreen = "Medit3min"
+        projectUtil.duration = 180
         performSegue(withIdentifier: "PlayTimed",
                      sender: self)
     }
     
     
     @IBAction func meditation5min(_ sender: Any) {
-        projectUtil.originatingScreen = "Medit5min"
+        projectUtil.duration = 300
         performSegue(withIdentifier: "PlayTimed",
                      sender: self)
         
     }
     
     @IBAction func meditation10min(_ sender: Any) {
-        projectUtil.originatingScreen = "Medit10min"
+        projectUtil.duration = 600
         performSegue(withIdentifier: "PlayTimed",
                      sender: self)
     
@@ -68,25 +68,28 @@ class TimedViewController: UIViewController {
     
     
     @IBAction func meditation7min(_ sender: Any) {
-        projectUtil.originatingScreen = "Medit7min"
+        projectUtil.duration = 420
         performSegue(withIdentifier: "PlayTimed",
                      sender: self)
         
     }
 
-    /*
     // MARK: - Navigation
      
-     projectUtil.originatingScreen = "quickstart"
-     performSegue(withIdentifier: "quickPlayMusic",
-     sender: self)
+     //projectUtil.originatingScreen = "quickstart"
+     //performSegue(withIdentifier: "quickPlayMusic",
+     //sender: self)
 
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        projectUtil.originatingScreen = "timedMedi"
+
+        let playViewController = segue.destination as! playMusicViewController
+        playViewController.timed = projectUtil.duration
     }
-    */
+    
 
 }

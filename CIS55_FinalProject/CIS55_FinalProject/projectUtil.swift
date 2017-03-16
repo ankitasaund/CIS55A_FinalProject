@@ -12,4 +12,5 @@ class projectUtil{
     
     //USed to store name of the originating screen
     static var originatingScreen : String!
+    static var duration: Double!
 }

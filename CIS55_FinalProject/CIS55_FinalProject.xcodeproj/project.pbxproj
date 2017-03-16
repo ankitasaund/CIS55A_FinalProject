@@ -13,7 +13,6 @@
 		3D9E6E4A1E6E108D00A07DF1 /* CIS55_FinalProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D9E6E481E6E108D00A07DF1 /* CIS55_FinalProject.xcdatamodeld */; };
 		3D9E6E4F1E6E108E00A07DF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9E6E4D1E6E108E00A07DF1 /* LaunchScreen.storyboard */; };
 		3DDD74211E79A41F00EF818C /* FeelingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD74201E79A41F00EF818C /* FeelingsTableViewCell.swift */; };
-		3DDD74251E79A9C000EF818C /* 01 Body and Sound Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DDD74221E79A9C000EF818C /* 01 Body and Sound Meditation.mp3 */; };
 		3DDD74261E79A9C000EF818C /* 04 Zebra Finches in the outback.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DDD74231E79A9C000EF818C /* 04 Zebra Finches in the outback.mp3 */; };
 		3DDD74271E79A9C000EF818C /* GoksuMarshes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3DDD74241E79A9C000EF818C /* GoksuMarshes.mp3 */; };
 		3DF437DE1E735C6D00E8FF8B /* SongListObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF437DD1E735C6D00E8FF8B /* SongListObject.swift */; };
@@ -33,7 +32,6 @@
 		3D9E6E4E1E6E108E00A07DF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D9E6E501E6E108E00A07DF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DDD74201E79A41F00EF818C /* FeelingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeelingsTableViewCell.swift; sourceTree = "<group>"; };
-		3DDD74221E79A9C000EF818C /* 01 Body and Sound Meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "01 Body and Sound Meditation.mp3"; path = "Songs/01 Body and Sound Meditation.mp3"; sourceTree = "<group>"; };
 		3DDD74231E79A9C000EF818C /* 04 Zebra Finches in the outback.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "04 Zebra Finches in the outback.mp3"; path = "Songs/04 Zebra Finches in the outback.mp3"; sourceTree = "<group>"; };
 		3DDD74241E79A9C000EF818C /* GoksuMarshes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = GoksuMarshes.mp3; path = Songs/GoksuMarshes.mp3; sourceTree = "<group>"; };
 		3DF437DD1E735C6D00E8FF8B /* SongListObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongListObject.swift; sourceTree = "<group>"; };
@@ -95,7 +93,6 @@
 		8D6B525B1E778FCB00B55E17 /* Songs */ = {
 			isa = PBXGroup;
 			children = (
-				3DDD74221E79A9C000EF818C /* 01 Body and Sound Meditation.mp3 */,
 				3DDD74231E79A9C000EF818C /* 04 Zebra Finches in the outback.mp3 */,
 				3DDD74241E79A9C000EF818C /* GoksuMarshes.mp3 */,
 			);
@@ -165,7 +162,6 @@
 				3DDD74261E79A9C000EF818C /* 04 Zebra Finches in the outback.mp3 in Resources */,
 				3D9E6E4F1E6E108E00A07DF1 /* LaunchScreen.storyboard in Resources */,
 				3D9E6E471E6E108D00A07DF1 /* Main.storyboard in Resources */,
-				3DDD74251E79A9C000EF818C /* 01 Body and Sound Meditation.mp3 in Resources */,
 				8DB180F11E788CC300977454 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
