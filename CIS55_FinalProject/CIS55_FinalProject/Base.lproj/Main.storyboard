@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zT3-Hg-IM1">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zT3-Hg-IM1">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="72"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cj9-eG-b0D" id="hwj-oU-ra0">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aYL-9h-s2T">
@@ -53,7 +53,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ao-mJ-wVT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3025" y="-683"/>
+            <point key="canvasLocation" x="3025" y="-469"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -79,6 +79,9 @@
                                 <state key="normal" title="Timed Meditation ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="9cz-kw-w7t" kind="show" identifier="ShowTimedView" id="wIA-ko-8Vz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9FD-bh-mdr">
                                 <rect key="frame" x="83" y="244" width="114" height="114"/>
@@ -201,7 +204,70 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hGL-qK-fDP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3024.8000000000002" y="120.98950524737631"/>
+            <point key="canvasLocation" x="4420" y="97"/>
+        </scene>
+        <!--Timed View Controller-->
+        <scene sceneID="cLn-TE-7PI">
+            <objects>
+                <viewController id="9cz-kw-w7t" customClass="TimedViewController" customModule="CIS55_FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DzX-in-t1a"/>
+                        <viewControllerLayoutGuide type="bottom" id="sp6-i8-k33"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wtH-je-MIP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="XAo-A1-drA">
+                                <rect key="frame" x="68" y="170" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.75581192190000002" green="1" blue="0.80280885830000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="3 min Meditation"/>
+                                <connections>
+                                    <action selector="meditation3min:" destination="9cz-kw-w7t" eventType="touchUpInside" id="OyU-gX-2bT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="2It-fQ-Ofy">
+                                <rect key="frame" x="243" y="236" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98001012129999998" green="1" blue="0.60168949819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="5 min Meditation"/>
+                                <connections>
+                                    <action selector="meditation5min:" destination="9cz-kw-w7t" eventType="touchUpInside" id="1H0-FK-zj4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="sjy-SG-b5o">
+                                <rect key="frame" x="220" y="479" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86844373200000002" green="1" blue="0.42988567649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="7 min Meditation"/>
+                                <connections>
+                                    <action selector="meditation7min:" destination="9cz-kw-w7t" eventType="touchUpInside" id="qbb-Vk-XQa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="G8d-B9-Bp0">
+                                <rect key="frame" x="95" y="358" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.84360614899999997" blue="0.98455813640000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="10 min Meditation"/>
+                                <connections>
+                                    <action selector="meditation10min:" destination="9cz-kw-w7t" eventType="touchUpInside" id="8CE-rX-LmJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="Medit10min" destination="G8d-B9-Bp0" id="gff-6L-uXS"/>
+                        <outlet property="Medit3min" destination="XAo-A1-drA" id="8ap-B9-4Ra"/>
+                        <outlet property="Medit5min" destination="2It-fQ-Ofy" id="EV5-BG-js9"/>
+                        <outlet property="Medit7min" destination="sjy-SG-b5o" id="5ub-ga-5l2"/>
+                        <segue destination="EzF-Ja-FG8" kind="show" identifier="PlayTimed" id="Hvg-gJ-naZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OYB-zS-zoP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3025" y="720"/>
         </scene>
         <!--Home-->
         <scene sceneID="4GV-sH-O8g">
@@ -250,6 +316,6 @@
         <image name="volume" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ohb-Ii-DGl"/>
+        <segue reference="Hvg-gJ-naZ"/>
     </inferredMetricsTieBreakers>
 </document>
