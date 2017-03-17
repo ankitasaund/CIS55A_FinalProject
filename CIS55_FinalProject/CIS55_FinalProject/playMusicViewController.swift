@@ -23,16 +23,25 @@ class playMusicViewController: UIViewController {
     var newProgressPoints : ProgressPointsObjectMO!
 
     
+    @IBOutlet var animView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         //add background to view
-        /*  let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-         backgroundImage.image = #imageLiteral(resourceName: "natureback")
-         self.view.insertSubview(backgroundImage, at: 0)
-         backgroundImage.contentMode = UIViewContentMode.scaleAspectFill;
-         
-         */
-        // Do any additional setup after loading the view.
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = #imageLiteral(resourceName: "zen-meditation")
+        self.view.insertSubview(backgroundImage, at: 0)
+        backgroundImage.contentMode = UIViewContentMode.scaleAspectFill;
+        
+        
+        //add fly-in animation for Image
+        
+        var rotationTransform : CATransform3D = CATransform3DIdentity
+        rotationTransform = CATransform3DTranslate(rotationTransform, -250, -250, 0)
+        animView.layer.transform = rotationTransform
+        UIView.animate(withDuration: 6, animations: {
+            self.animView?.layer.transform = CATransform3DIdentity
+        })
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -190,11 +199,19 @@ class playMusicViewController: UIViewController {
         }
     }
     
+    @IBAction func stop(_ sender: Any) {
+        if isPlaying
+        {
+            audioPlayer.stop()
+        }
+    }
+    
     //control volume using slider
     @IBAction func controlVolume(_ sender: UISlider) {
-        
+        if isPlaying
+        {
         audioPlayer.volume = sender.value
-        
+        }
     }
     func addPoints(numOfPoints : Int, totalTime : Int) {
         if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
