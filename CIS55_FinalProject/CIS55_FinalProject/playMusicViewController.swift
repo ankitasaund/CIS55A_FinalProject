@@ -34,6 +34,10 @@ class playMusicViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let background = CAGradientLayer().skyColor()
+        background.frame = self.view.bounds
+        self.view.layer.insertSublayer(background, at: 0)
+
         
         img_1 = UIImage(named: "natureback-1")
         img_2 = UIImage(named: "zen-meditation")
@@ -43,12 +47,12 @@ class playMusicViewController: UIViewController {
         
         //add fly-in animation for Image
         
-        var rotationTransform : CATransform3D = CATransform3DIdentity
-        rotationTransform = CATransform3DTranslate(rotationTransform, -250, -250, 0)
-        animView.layer.transform = rotationTransform
-        UIView.animate(withDuration: 6, animations: {
-            self.animView?.layer.transform = CATransform3DIdentity
-        })
+        //var rotationTransform : CATransform3D = CATransform3DIdentity
+        //rotationTransform = CATransform3DTranslate(rotationTransform, -250, -250, 0)
+        //animView.layer.transform = rotationTransform
+        //UIView.animate(withDuration: 6, animations: {
+        //    self.animView?.layer.transform = CATransform3DIdentity
+        //})
         
         animatedImage = UIImage.animatedImage(with: images, duration: 9.0)
         animView.image = animatedImage

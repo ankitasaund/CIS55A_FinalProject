@@ -12,9 +12,9 @@ class feelingsTableViewController: UITableViewController {
     
     var mySongList =
     [
-            SongListObject(songFileName: NSDataAsset(name: "Guided")!, songType: "guided", songEmotion: "Happy", songImage: #imageLiteral(resourceName: "natureback"), songDuration: 5)
-            ,SongListObject(songFileName: NSDataAsset(name:"Nature")!, songType: "sounds", songEmotion: "Stressed", songImage: #imageLiteral(resourceName: "natureback-1"), songDuration: 10)
-            ,SongListObject(songFileName: NSDataAsset(name: "RelaxingMusic")!, songType: "sounds", songEmotion: "Calm", songImage: #imageLiteral(resourceName: "natureback"), songDuration: 15)
+            SongListObject(songFileName: NSDataAsset(name: "Guided")!, songType: "guided", songEmotion: "Happy", songImage: #imageLiteral(resourceName: "happy"), songDuration: 5)
+            ,SongListObject(songFileName: NSDataAsset(name:"Nature")!, songType: "sounds", songEmotion: "Stressed", songImage: #imageLiteral(resourceName: "stressed"), songDuration: 10)
+            ,SongListObject(songFileName: NSDataAsset(name: "RelaxingMusic")!, songType: "sounds", songEmotion: "Calm", songImage: #imageLiteral(resourceName: "calm"), songDuration: 15)
     ]
     
     override func viewDidLoad() {

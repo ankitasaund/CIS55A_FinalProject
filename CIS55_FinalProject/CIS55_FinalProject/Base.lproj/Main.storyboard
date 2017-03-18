@@ -6,6 +6,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,7 +29,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aYL-9h-s2T">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
+                                            <rect key="frame" x="0.0" y="-1.5" width="413" height="72.5"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </imageView>
                                         <visualEffectView opaque="NO" alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wi7-1S-JKV">
@@ -77,10 +80,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <visualEffectView opaque="NO" alpha="0.25" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J5Z-L2-EnF">
-                                <rect key="frame" x="0.0" y="65" width="414" height="622"/>
+                                <rect key="frame" x="0.0" y="64" width="415" height="623"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="zcL-bd-QwA">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="622"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="415" height="623"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <blurEffect style="dark"/>
@@ -89,13 +92,13 @@
                                 <rect key="frame" x="189" y="49" width="205" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cxa-zz-6fc">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cxa-zz-6fc">
                                 <rect key="frame" x="228" y="201" width="114" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.52228176593780518" green="0.72102636098861694" blue="0.7686803936958313" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="backgroundColor" red="0.098039215686274508" green="0.39215686274509803" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <state key="normal" title="Timed Meditation ">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.55332393618404641" green="0.85761982853474927" blue="0.96775856598984777" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="9cz-kw-w7t" kind="show" identifier="ShowTimedView" id="wIA-ko-8Vz"/>
@@ -104,10 +107,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9FD-bh-mdr">
                                 <rect key="frame" x="83" y="244" width="114" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.27676120400428772" green="0.49344542622566223" blue="0.55302494764328003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="backgroundColor" red="0.068025059998035431" green="0.6163526177406311" blue="0.64307171106338501" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <state key="normal" title="Quick Start">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.57175824180702839" green="0.8861919270717632" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="quickStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F6i-9L-qVs"/>
@@ -116,10 +119,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="NF5-Cx-ozx">
                                 <rect key="frame" x="16" y="377" width="114" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.37911808490753174" green="0.66076898574829102" blue="0.45101085305213928" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="backgroundColor" red="0.29411764705882354" green="0.24705882352941178" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <state key="normal" title="How Are You Feeling?">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.79703586245901048" green="0.74685431681171832" blue="0.97717718908629436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="HowAreYouFeeling:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BtG-CI-7SD"/>
@@ -129,9 +132,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cU-VD-NJD">
                                 <rect key="frame" x="181" y="445" width="78" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.91313838958740234" green="0.89543092250823975" blue="0.76862359046936035" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="1" green="0.78451502323150635" blue="0.34231239557266235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                 <state key="normal" title="Progress">
-                                    <color key="titleColor" red="0.40008461475372314" green="0.40007656812667847" blue="0.40008202195167542" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.41367065906524658" green="0.34295421838760376" blue="0.18104881048202515" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="9ag-Gf-laW" kind="show" identifier="ProgressSegue" id="IEW-aR-9I2"/>
@@ -140,14 +144,17 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wf4-Sq-1E3">
                                 <rect key="frame" x="287" y="377" width="78" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.91313838958740234" green="0.89543092250823975" blue="0.76862359046936035" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.99844580888748169" green="0.72003394365310669" blue="0.43620872497558594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                 <state key="normal" title="Planner">
-                                    <color key="titleColor" red="0.40008461475372314" green="0.40007656812667847" blue="0.40008202195167542" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.40307741116751272" green="0.33303483698108655" blue="0.17630816615245554" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                         </subviews>
                     </view>
-                    <navigationItem key="navigationItem" id="g7w-ya-ZAH"/>
+                    <navigationItem key="navigationItem" id="g7w-ya-ZAH">
+                        <nil key="title"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="feelingBtn" destination="NF5-Cx-ozx" id="cVB-5X-5Ak"/>
                         <outlet property="plannerBtn" destination="wf4-Sq-1E3" id="u0F-62-BMx"/>
@@ -159,7 +166,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1995.6521739130437" y="122.28260869565219"/>
+            <point key="canvasLocation" x="1960.8695652173915" y="115.7608695652174"/>
         </scene>
         <!--Play Music View Controller-->
         <scene sceneID="M9G-Gg-Cp5">
@@ -173,49 +180,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iks-qz-GP5">
-                                <rect key="frame" x="36" y="107" width="343" height="379"/>
+                            <visualEffectView opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fpC-OJ-9UF">
+                                <rect key="frame" x="-1" y="64" width="415" height="623"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="qUn-DF-I3I">
+                                    <rect key="frame" x="0.0" y="0.0" width="415" height="623"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="noVolume" translatesAutoresizingMaskIntoConstraints="NO" id="2v3-W6-G5g">
+                                            <rect key="frame" x="83" y="590" width="22" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="volume-1" translatesAutoresizingMaskIntoConstraints="NO" id="Rc9-dM-MZH">
+                                            <rect key="frame" x="313" y="590" width="22" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="IHU-OB-DgD">
+                                <rect key="frame" x="105" y="649" width="203" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="0.28970391353097968" green="0.22913103108716201" blue="0.32580365838133141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.46214238826306286" green="0.36551512418721815" blue="0.51972953680203049" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="controlVolume:" destination="EzF-Ja-FG8" eventType="valueChanged" id="HUI-DO-ezR"/>
+                                </connections>
+                            </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SnL-0T-38G">
-                                <rect key="frame" x="36" y="506" width="55" height="55"/>
+                                <rect key="frame" x="180" y="509" width="55" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Play" image="play1">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="play">
+                                    <color key="titleColor" red="0.47485993319999997" green="0.47708167089999998" blue="0.51098508880000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="play:" destination="EzF-Ja-FG8" eventType="touchUpInside" id="bpB-2z-jfh"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="IHU-OB-DgD">
-                                <rect key="frame" x="126" y="591" width="162" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlp-LZ-Xq1">
+                                <rect key="frame" x="251" y="568" width="55" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="minimumTrackTintColor" red="0.38813680410385132" green="0.91043829917907715" blue="0.90393811464309692" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="maximumTrackTintColor" red="0.28703334927558899" green="0.69399344921112061" blue="0.79156708717346191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="stop"/>
                                 <connections>
-                                    <action selector="controlVolume:" destination="EzF-Ja-FG8" eventType="valueChanged" id="HUI-DO-ezR"/>
+                                    <action selector="stop:" destination="EzF-Ja-FG8" eventType="touchUpInside" id="6gv-uF-oKO"/>
                                 </connections>
-                            </slider>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koH-aY-e1k">
-                                <rect key="frame" x="180" y="506" width="55" height="55"/>
+                                <rect key="frame" x="107" y="568" width="55" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Pause" image="pause1">
+                                <state key="normal" image="pause">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="pause:" destination="EzF-Ja-FG8" eventType="touchUpInside" id="BR3-8I-zO5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlp-LZ-Xq1">
-                                <rect key="frame" x="324" y="506" width="55" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Stop" image="stop1"/>
-                                <connections>
-                                    <action selector="stop:" destination="EzF-Ja-FG8" eventType="touchUpInside" id="6gv-uF-oKO"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="volume" translatesAutoresizingMaskIntoConstraints="NO" id="2v3-W6-G5g">
-                                <rect key="frame" x="72" y="582" width="48" height="48"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iks-qz-GP5">
+                                <rect key="frame" x="-1" y="89" width="414" height="313"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -227,7 +249,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hGL-qK-fDP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4837.6000000000004" y="122.78860569715144"/>
+            <point key="canvasLocation" x="4834.7826086956529" y="122.28260869565219"/>
         </scene>
         <!--Timed View Controller-->
         <scene sceneID="cLn-TE-7PI">
@@ -241,38 +263,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="XAo-A1-drA">
-                                <rect key="frame" x="68" y="170" width="100" height="100"/>
+                            <visualEffectView opaque="NO" alpha="0.25" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j4b-gy-Y2H">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.75581192190000002" green="1" blue="0.80280885830000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="3 min Meditation"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="9il-ZR-h2J">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="623"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="XAo-A1-drA">
+                                <rect key="frame" x="52" y="114" width="130" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.67531406879425049" green="0.62518996000289917" blue="0.73265796899795532" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <state key="normal" title="3 min Meditation">
+                                    <color key="titleColor" red="0.34124946594238281" green="0.32817023992538452" blue="0.39026361703872681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="meditation3min:" destination="9cz-kw-w7t" eventType="touchUpInside" id="OyU-gX-2bT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="2It-fQ-Ofy">
-                                <rect key="frame" x="243" y="236" width="100" height="100"/>
+                                <rect key="frame" x="236" y="231" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.98001012129999998" green="1" blue="0.60168949819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="5 min Meditation"/>
+                                <color key="backgroundColor" red="0.93432950973510742" green="0.70483595132827759" blue="0.70259040594100952" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <state key="normal" title="5 min Meditation">
+                                    <color key="titleColor" red="0.47269058227539062" green="0.37575834989547729" blue="0.39151519536972046" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="meditation5min:" destination="9cz-kw-w7t" eventType="touchUpInside" id="1H0-FK-zj4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="sjy-SG-b5o">
-                                <rect key="frame" x="220" y="479" width="100" height="100"/>
+                                <rect key="frame" x="222" y="494" width="101" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.86844373200000002" green="1" blue="0.42988567649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="7 min Meditation"/>
+                                <color key="backgroundColor" red="0.93505656719207764" green="0.88100016117095947" blue="0.70070677995681763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <state key="normal" title="7 min Meditation">
+                                    <color key="titleColor" red="0.40434113144874573" green="0.39312839508056641" blue="0.33041846752166748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="meditation7min:" destination="9cz-kw-w7t" eventType="touchUpInside" id="qbb-Vk-XQa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="G8d-B9-Bp0">
-                                <rect key="frame" x="95" y="358" width="100" height="100"/>
+                                <rect key="frame" x="84" y="358" width="109" height="109"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.84360614899999997" blue="0.98455813640000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="10 min Meditation"/>
+                                <color key="backgroundColor" red="0.87492179870605469" green="0.85026305913925171" blue="0.88731497526168823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                <state key="normal" title="10 min Meditation">
+                                    <color key="titleColor" red="0.33839625634517767" green="0.33036568795732724" blue="0.27932788327618457" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="meditation10min:" destination="9cz-kw-w7t" eventType="touchUpInside" id="8CE-rX-LmJ"/>
                                 </connections>
@@ -290,7 +333,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OYB-zS-zoP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3425" y="489"/>
+            <point key="canvasLocation" x="3424.6376811594205" y="488.31521739130437"/>
         </scene>
         <!--Progress View Controller-->
         <scene sceneID="AQX-D6-IzA">
@@ -308,7 +351,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Wf-bQ-cDZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1996" y="1064"/>
+            <point key="canvasLocation" x="1961" y="1149"/>
         </scene>
         <!--About Us-->
         <scene sceneID="RDX-gF-abG">
@@ -320,101 +363,79 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="stZ-MW-Vdw" kind="relationship" relationship="rootViewController" id="Lkn-nb-pjj"/>
+                        <segue destination="jKH-Jx-Vxk" kind="relationship" relationship="rootViewController" id="ueq-X5-rqv"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5cw-Z1-QgR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1071" y="1801"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="pp4-No-f7w">
+        <!--About us -->
+        <scene sceneID="iqu-Ba-0FW">
             <objects>
-                <viewController storyboardIdentifier="AnkitaVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Bp1-LO-J6M" sceneMemberID="viewController">
+                <viewController id="jKH-Jx-Vxk" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="OJX-na-i6S"/>
-                        <viewControllerLayoutGuide type="bottom" id="Kdg-fP-UJf"/>
+                        <viewControllerLayoutGuide type="top" id="0WC-RB-fnW"/>
+                        <viewControllerLayoutGuide type="bottom" id="D4k-8e-zxx"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="qAd-Ey-OLt">
+                    <view key="view" contentMode="scaleToFill" id="pXQ-If-siN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yws-pT-PCy">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6LG-5P-CL1">
+                                        <rect key="frame" x="0.0" y="-64" width="414" height="1246"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wHp-pC-nc3">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="311.66666666666669"/>
+                                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2st-Di-5Hc">
+                                                <rect key="frame" x="0.0" y="311.66666666666674" width="414" height="311.33333333333326"/>
+                                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B0J-37-70s">
+                                                <rect key="frame" x="0.0" y="623" width="414" height="311.66666666666663"/>
+                                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZ0-4a-crX">
+                                                <rect key="frame" x="0.0" y="934.66666666666652" width="414" height="311.33333333333348"/>
+                                                <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6LG-5P-CL1" secondAttribute="trailing" id="LPn-GE-yjZ"/>
+                                    <constraint firstItem="6LG-5P-CL1" firstAttribute="height" secondItem="Yws-pT-PCy" secondAttribute="height" multiplier="2" id="a9Y-nG-KvL"/>
+                                    <constraint firstAttribute="bottom" secondItem="6LG-5P-CL1" secondAttribute="bottom" id="gkO-rP-1Du"/>
+                                    <constraint firstItem="6LG-5P-CL1" firstAttribute="leading" secondItem="Yws-pT-PCy" secondAttribute="leading" id="y0q-aw-TEv"/>
+                                    <constraint firstItem="6LG-5P-CL1" firstAttribute="top" secondItem="Yws-pT-PCy" secondAttribute="firstBaseline" id="z0u-Az-LBK"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6LG-5P-CL1" firstAttribute="width" secondItem="pXQ-If-siN" secondAttribute="width" id="2Ep-0g-gqN"/>
+                            <constraint firstAttribute="trailing" secondItem="Yws-pT-PCy" secondAttribute="trailing" id="70i-67-wqm"/>
+                            <constraint firstItem="0WC-RB-fnW" firstAttribute="bottom" secondItem="Yws-pT-PCy" secondAttribute="top" id="Xr2-sI-edN"/>
+                            <constraint firstItem="Yws-pT-PCy" firstAttribute="leading" secondItem="pXQ-If-siN" secondAttribute="leading" id="aj2-qA-XgS"/>
+                            <constraint firstItem="Yws-pT-PCy" firstAttribute="bottom" secondItem="D4k-8e-zxx" secondAttribute="top" id="ttr-x7-y5e"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="About us " id="SFW-Y4-vGd"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tEw-Lp-U0Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQd-eb-htk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1046" y="2527"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="74W-lq-96M">
-            <objects>
-                <viewController storyboardIdentifier="JanVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f1R-DS-bjP" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="XYS-Ke-gv4"/>
-                        <viewControllerLayoutGuide type="bottom" id="PI5-3x-XyV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ceA-Yb-n18">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ChC-Er-TDi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1705" y="2532"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="nlt-cJ-94w">
-            <objects>
-                <viewController storyboardIdentifier="NodiraVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f5q-tL-HjE" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Uru-Vf-ZpZ"/>
-                        <viewControllerLayoutGuide type="bottom" id="O2R-pJ-HUO"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Mj4-1C-Yov">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Hc-tO-Ll1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2364" y="2535"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="JWO-y4-lPh">
-            <objects>
-                <viewController storyboardIdentifier="PatVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TCc-ur-rUO" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="znY-Cl-xMH"/>
-                        <viewControllerLayoutGuide type="bottom" id="kZl-jv-xMF"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="VN0-bH-Dnk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HG4-uV-KUO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3023" y="2535"/>
-        </scene>
-        <!--About Page View Controller-->
-        <scene sceneID="bDp-fo-RgK">
-            <objects>
-                <pageViewController storyboardIdentifier="Main" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="stZ-MW-Vdw" customClass="AboutPageViewController" customModule="CIS55_FinalProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
-                    <navigationItem key="navigationItem" id="DOy-dE-mu5"/>
-                </pageViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OlB-ZQ-5gh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1900" y="1799"/>
+            <point key="canvasLocation" x="1895.6521739130437" y="1801.6304347826087"/>
         </scene>
         <!--Meditate-->
         <scene sceneID="4GV-sH-O8g">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="va1-pQ-Hst" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Meditate" image="mypic" id="G6k-aT-a5Y"/>
+                    <tabBarItem key="tabBarItem" title="Meditate" image="MeditateIcon" id="G6k-aT-a5Y"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BYk-yL-Mh6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -450,15 +471,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="MeditateIcon" width="25" height="25"/>
         <image name="User Groups-50" width="25" height="25"/>
-        <image name="mypic" width="25" height="25"/>
-        <image name="pause1" width="256" height="256"/>
-        <image name="play1" width="256" height="256"/>
-        <image name="stop1" width="256" height="256"/>
+        <image name="noVolume" width="512" height="512"/>
+        <image name="pause" width="512" height="512"/>
+        <image name="play" width="512" height="512"/>
+        <image name="stop" width="512" height="512"/>
         <image name="title" width="457" height="276"/>
-        <image name="volume" width="128" height="128"/>
+        <image name="volume-1" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZQD-ze-KZ8"/>
+        <segue reference="ohb-Ii-DGl"/>
     </inferredMetricsTieBreakers>
 </document>

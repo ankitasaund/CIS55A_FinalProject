@@ -68,6 +68,11 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate  {
         makeButtonsRound(button: progressBtn)
         makeButtonsRound(button: plannerBtn)
         
+        //Align text for 2 of the buttons
+        timedMeditationBtn.titleLabel?.textAlignment = NSTextAlignment.center
+        feelingBtn.titleLabel?.textAlignment = NSTextAlignment.center
+
+        
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = #imageLiteral(resourceName: "sunset")
         self.view.insertSubview(backgroundImage, at: 0)
