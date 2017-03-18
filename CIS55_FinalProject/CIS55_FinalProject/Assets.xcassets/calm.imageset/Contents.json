@@ -4,6 +4,14 @@
       "idiom" : "universal",
       "filename" : "28834_landscape_calm_ocean_water.jpg",
       "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

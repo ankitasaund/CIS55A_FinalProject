@@ -12,9 +12,12 @@ class feelingsTableViewController: UITableViewController {
     
     var mySongList =
     [
-            SongListObject(songFileName: NSDataAsset(name: "Guided")!, songType: "guided", songEmotion: "Happy", songImage: #imageLiteral(resourceName: "happy"), songDuration: 5)
-            ,SongListObject(songFileName: NSDataAsset(name:"Nature")!, songType: "sounds", songEmotion: "Stressed", songImage: #imageLiteral(resourceName: "stressed"), songDuration: 10)
-            ,SongListObject(songFileName: NSDataAsset(name: "RelaxingMusic")!, songType: "sounds", songEmotion: "Calm", songImage: #imageLiteral(resourceName: "calm"), songDuration: 15)
+            SongListObject(songFileName: NSDataAsset(name: "LovingKindness")!, songType: "guided", songEmotion: "Happy", songImage: #imageLiteral(resourceName: "Kayaking"), songDuration: 10)
+            ,SongListObject(songFileName: NSDataAsset(name:"BreathingSpace")!, songType: "guided", songEmotion: "Calm", songImage: #imageLiteral(resourceName: "LakeView"), songDuration: 3)
+            ,SongListObject(songFileName: NSDataAsset(name: "WorkingwithDifficulties")!, songType: "guided", songEmotion: "Stressed", songImage: #imageLiteral(resourceName: "Stream"), songDuration: 7)
+            ,SongListObject(songFileName: NSDataAsset(name: "LovingKindness")!, songType: "guided", songEmotion: "Lonely", songImage: #imageLiteral(resourceName: "ForestBridge"), songDuration: 10)
+            ,SongListObject(songFileName: NSDataAsset(name: "WorkingwithDifficulties")!, songType: "guided", songEmotion: "Sad", songImage: #imageLiteral(resourceName: "Westcliff"), songDuration: 7)
+            ,SongListObject(songFileName: NSDataAsset(name: "BreathingSpace")!, songType: "guided", songEmotion: "Optimistic", songImage: #imageLiteral(resourceName: "Waterfall"), songDuration: 3)
     ]
     
     override func viewDidLoad() {

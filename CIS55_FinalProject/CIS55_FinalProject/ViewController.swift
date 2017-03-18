@@ -22,12 +22,15 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate  {
 
     var player: AVAudioPlayer? = nil
     var myPoints : [ProgressPointsObjectMO] = []
-
     var mySongList =
-    [
-        SongListObject(songFileName: NSDataAsset(name: "Guided")!, songType: "guided", songEmotion: "sad", songImage: #imageLiteral(resourceName: "natureback"), songDuration: 5)
-        ,SongListObject(songFileName: NSDataAsset(name:"Nature")!, songType: "sounds", songEmotion: "anxious", songImage: #imageLiteral(resourceName: "natureback-1"), songDuration: 10)
-        ,SongListObject(songFileName: NSDataAsset(name: "RelaxingMusic")!, songType: "sounds", songEmotion: "calm", songImage: #imageLiteral(resourceName: "natureback"), songDuration: 15)
+        [
+            SongListObject(songFileName: NSDataAsset(name: "LovingKindness")!, songType: "guided", songEmotion: "Happy", songImage: #imageLiteral(resourceName: "Kayaking"), songDuration: 10)
+            ,SongListObject(songFileName: NSDataAsset(name:"BreathingSpace")!, songType: "guided", songEmotion: "Calm", songImage: #imageLiteral(resourceName: "Westcliff"), songDuration: 3)
+            ,SongListObject(songFileName: NSDataAsset(name: "WorkingwithDifficulties")!, songType: "guided", songEmotion: "Stress", songImage: #imageLiteral(resourceName: "LakeView"), songDuration: 7)
+            ,SongListObject(songFileName: NSDataAsset(name: "LovingKindness")!, songType: "guided", songEmotion: "Loneliness", songImage: #imageLiteral(resourceName: "Stream"), songDuration: 10)
+            
+            ,SongListObject(songFileName: NSDataAsset(name: "WorkingwithDifficulties")!, songType: "guided", songEmotion: "Sad", songImage: #imageLiteral(resourceName: "LakeView"), songDuration: 7)
+            ,SongListObject(songFileName: NSDataAsset(name: "BreathingSpace")!, songType: "guided", songEmotion: "Bored", songImage: #imageLiteral(resourceName: "Waterfall"), songDuration: 3)
     ]
     
     var fetchResultsController : NSFetchedResultsController<ProgressPointsObjectMO>!
