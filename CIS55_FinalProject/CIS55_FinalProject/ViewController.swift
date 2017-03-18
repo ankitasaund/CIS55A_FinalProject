@@ -69,7 +69,7 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate  {
         makeButtonsRound(button: plannerBtn)
         
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = #imageLiteral(resourceName: "firstscreen_background")
+        backgroundImage.image = #imageLiteral(resourceName: "sunset")
         self.view.insertSubview(backgroundImage, at: 0)
         backgroundImage.contentMode = UIViewContentMode.scaleAspectFill;
 
@@ -102,6 +102,8 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate  {
  
         
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

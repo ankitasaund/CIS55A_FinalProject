@@ -9,6 +9,7 @@
 import UIKit
 
 class FeelingsTableViewCell: UITableViewCell {
+   
     @IBOutlet weak var emotionName: UILabel!
     @IBOutlet weak var songImage: UIImageView!
 

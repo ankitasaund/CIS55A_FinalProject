@@ -22,16 +22,24 @@ class playMusicViewController: UIViewController {
     var currentUrl : URL!
     var newProgressPoints : ProgressPointsObjectMO!
 
+    var img_1: UIImage!
+    var img_2: UIImage!
+    var img_3: UIImage!
+    var images: [UIImage]!
+    var animatedImage: UIImage!
     
     @IBOutlet var animView: UIImageView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //add background to view
-        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = #imageLiteral(resourceName: "zen-meditation")
-        self.view.insertSubview(backgroundImage, at: 0)
-        backgroundImage.contentMode = UIViewContentMode.scaleAspectFill;
         
+        img_1 = UIImage(named: "natureback-1")
+        img_2 = UIImage(named: "zen-meditation")
+        img_3 = UIImage(named: "natureback")
+        images = [img_1, img_2, img_3]
+      
         
         //add fly-in animation for Image
         
@@ -41,6 +49,9 @@ class playMusicViewController: UIViewController {
         UIView.animate(withDuration: 6, animations: {
             self.animView?.layer.transform = CATransform3DIdentity
         })
+        
+        animatedImage = UIImage.animatedImage(with: images, duration: 9.0)
+        animView.image = animatedImage
         
     }
     
