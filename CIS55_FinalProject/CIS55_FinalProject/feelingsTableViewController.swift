@@ -11,7 +11,7 @@ import UIKit
 class feelingsTableViewController: UITableViewController {
     
     var mySongList =
-        [
+    [
             SongListObject(songFileName: NSDataAsset(name: "Guided")!, songType: "guided", songEmotion: "Happy", songImage: #imageLiteral(resourceName: "natureback"), songDuration: 5)
             ,SongListObject(songFileName: NSDataAsset(name:"Nature")!, songType: "sounds", songEmotion: "Stressed", songImage: #imageLiteral(resourceName: "natureback-1"), songDuration: 10)
             ,SongListObject(songFileName: NSDataAsset(name: "RelaxingMusic")!, songType: "sounds", songEmotion: "Calm", songImage: #imageLiteral(resourceName: "natureback"), songDuration: 15)
@@ -26,6 +26,11 @@ class feelingsTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        animateTable()
     }
 
     override func didReceiveMemoryWarning() {
@@ -59,6 +64,26 @@ class feelingsTableViewController: UITableViewController {
     
         return cell
 
+    }
+    
+    func animateTable(){
+        tableView.reloadData()
+        let cells = tableView.visibleCells
+        
+        let tableViewHeight = tableView.bounds.size.height
+        
+        for cell in cells{
+            cell.transform = CGAffineTransform(translationX: 0, y:tableViewHeight)
+        }
+        
+        var delayCounter = 0
+        for cell in cells{
+            UIView.animate(withDuration: 2, delay: Double(delayCounter)*0.05, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
+                cell.transform = CGAffineTransform.identity
+            }, completion: nil)
+            delayCounter += 1
+        }
+    
     }
     
 

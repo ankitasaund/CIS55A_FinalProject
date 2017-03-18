@@ -25,15 +25,24 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="71.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aYL-9h-s2T">
-                                            <rect key="frame" x="23" y="3" width="60" height="60"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aYL-9h-s2T">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Emotion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmg-pF-DTV">
-                                            <rect key="frame" x="116" y="25" width="241" height="21"/>
+                                        <visualEffectView opaque="NO" alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wi7-1S-JKV">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="nSB-Re-CYo">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <blurEffect style="dark"/>
+                                        </visualEffectView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Emotion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmg-pF-DTV">
+                                            <rect key="frame" x="86" y="12" width="241" height="47"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="29"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -53,7 +62,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ao-mJ-wVT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3426" y="-216"/>
+            <point key="canvasLocation" x="3424.6376811594205" y="-216.03260869565219"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -67,6 +76,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <visualEffectView opaque="NO" alpha="0.25" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J5Z-L2-EnF">
+                                <rect key="frame" x="0.0" y="65" width="414" height="622"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="zcL-bd-QwA">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="622"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
                             <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="Gc8-eq-wf7">
                                 <rect key="frame" x="189" y="49" width="205" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -128,7 +146,6 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="g7w-ya-ZAH"/>
                     <connections>
@@ -142,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1996" y="122.78860569715144"/>
+            <point key="canvasLocation" x="1995.6521739130437" y="122.28260869565219"/>
         </scene>
         <!--Play Music View Controller-->
         <scene sceneID="M9G-Gg-Cp5">
@@ -156,7 +173,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="natureback-1" translatesAutoresizingMaskIntoConstraints="NO" id="Iks-qz-GP5">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iks-qz-GP5">
                                 <rect key="frame" x="36" y="107" width="343" height="379"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -313,7 +330,7 @@
         <!--View Controller-->
         <scene sceneID="pp4-No-f7w">
             <objects>
-                <viewController storyboardIdentifier="AnkitaVC" id="Bp1-LO-J6M" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AnkitaVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Bp1-LO-J6M" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OJX-na-i6S"/>
                         <viewControllerLayoutGuide type="bottom" id="Kdg-fP-UJf"/>
@@ -331,7 +348,7 @@
         <!--View Controller-->
         <scene sceneID="74W-lq-96M">
             <objects>
-                <viewController storyboardIdentifier="JanVC" id="f1R-DS-bjP" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JanVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f1R-DS-bjP" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XYS-Ke-gv4"/>
                         <viewControllerLayoutGuide type="bottom" id="PI5-3x-XyV"/>
@@ -349,7 +366,7 @@
         <!--View Controller-->
         <scene sceneID="nlt-cJ-94w">
             <objects>
-                <viewController storyboardIdentifier="NodiraVC" id="f5q-tL-HjE" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NodiraVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f5q-tL-HjE" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Uru-Vf-ZpZ"/>
                         <viewControllerLayoutGuide type="bottom" id="O2R-pJ-HUO"/>
@@ -367,7 +384,7 @@
         <!--View Controller-->
         <scene sceneID="JWO-y4-lPh">
             <objects>
-                <viewController storyboardIdentifier="PatVC" id="TCc-ur-rUO" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PatVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TCc-ur-rUO" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="znY-Cl-xMH"/>
                         <viewControllerLayoutGuide type="bottom" id="kZl-jv-xMF"/>
@@ -385,7 +402,8 @@
         <!--About Page View Controller-->
         <scene sceneID="bDp-fo-RgK">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="stZ-MW-Vdw" customClass="AboutPageViewController" customModule="CIS55_FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="Main" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="stZ-MW-Vdw" customClass="AboutPageViewController" customModule="CIS55_FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <navigationItem key="navigationItem" id="DOy-dE-mu5"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OlB-ZQ-5gh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -434,7 +452,6 @@
     <resources>
         <image name="User Groups-50" width="25" height="25"/>
         <image name="mypic" width="25" height="25"/>
-        <image name="natureback-1" width="2880" height="1800"/>
         <image name="pause1" width="256" height="256"/>
         <image name="play1" width="256" height="256"/>
         <image name="stop1" width="256" height="256"/>
