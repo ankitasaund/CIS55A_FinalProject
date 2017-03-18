@@ -258,6 +258,11 @@ class playMusicViewController: UIViewController {
         }
     }
     
-
-    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if isPlaying
+        {
+            audioPlayer.stop()
+        }
+    }
 }
