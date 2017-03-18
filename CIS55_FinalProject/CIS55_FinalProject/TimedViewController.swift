@@ -25,6 +25,12 @@ class TimedViewController: UIViewController {
         makeButtonsRound(button: Medit7min)
         makeButtonsRound(button: Medit10min)
         
+        //Align text for all buttons
+        Medit3min.titleLabel?.textAlignment = NSTextAlignment.center
+        Medit5min.titleLabel?.textAlignment = NSTextAlignment.center
+        Medit7min.titleLabel?.textAlignment = NSTextAlignment.center
+        Medit10min.titleLabel?.textAlignment = NSTextAlignment.center
+        
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = #imageLiteral(resourceName: "TimedView")
         self.view.insertSubview(backgroundImage, at: 0)
