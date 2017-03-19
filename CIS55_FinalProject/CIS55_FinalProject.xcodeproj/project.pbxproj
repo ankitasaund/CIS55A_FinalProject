@@ -21,6 +21,8 @@
 		6D87F66D1E7A366A0050D755 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D87F66C1E7A366A0050D755 /* ProgressViewController.swift */; };
 		6DA134CB1E7BD68500BDD41D /* AboutPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA134CA1E7BD68500BDD41D /* AboutPageViewController.swift */; };
 		6DA134CD1E7D422F00BDD41D /* CAGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA134CC1E7D422F00BDD41D /* CAGradientLayer.swift */; };
+		6DA134CF1E7D93FF00BDD41D /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA134CE1E7D93FF00BDD41D /* AboutUsViewController.swift */; };
+		6DA134D11E7E000900BDD41D /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA134D01E7E000900BDD41D /* HelpViewController.swift */; };
 		8DB180ED1E78842800977454 /* playMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB180EC1E78842800977454 /* playMusicViewController.swift */; };
 		8DB180F11E788CC300977454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DB180F01E788CC300977454 /* Assets.xcassets */; };
 		8DC7495B1E790D39005B7AE5 /* projectUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC7495A1E790D39005B7AE5 /* projectUtil.swift */; };
@@ -44,6 +46,8 @@
 		6D87F66C1E7A366A0050D755 /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		6DA134CA1E7BD68500BDD41D /* AboutPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutPageViewController.swift; sourceTree = "<group>"; };
 		6DA134CC1E7D422F00BDD41D /* CAGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAGradientLayer.swift; sourceTree = "<group>"; };
+		6DA134CE1E7D93FF00BDD41D /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		6DA134D01E7E000900BDD41D /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		8DB180EC1E78842800977454 /* playMusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = playMusicViewController.swift; sourceTree = "<group>"; };
 		8DB180F01E788CC300977454 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DC7495A1E790D39005B7AE5 /* projectUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = projectUtil.swift; sourceTree = "<group>"; };
@@ -84,8 +88,10 @@
 				3D9E6E431E6E108D00A07DF1 /* ViewController.swift */,
 				3DF437DD1E735C6D00E8FF8B /* SongListObject.swift */,
 				3D9E6E451E6E108D00A07DF1 /* Main.storyboard */,
+				6DA134D01E7E000900BDD41D /* HelpViewController.swift */,
 				6DA134CC1E7D422F00BDD41D /* CAGradientLayer.swift */,
 				6DA134CA1E7BD68500BDD41D /* AboutPageViewController.swift */,
+				6DA134CE1E7D93FF00BDD41D /* AboutUsViewController.swift */,
 				6D87F66C1E7A366A0050D755 /* ProgressViewController.swift */,
 				D527B12B1E79EA300015ACC6 /* TimedViewController.swift */,
 				3DDD74201E79A41F00EF818C /* FeelingsTableViewCell.swift */,
@@ -189,6 +195,8 @@
 				3DDD74211E79A41F00EF818C /* FeelingsTableViewCell.swift in Sources */,
 				3D9E6E4A1E6E108D00A07DF1 /* CIS55_FinalProject.xcdatamodeld in Sources */,
 				3DF437DE1E735C6D00E8FF8B /* SongListObject.swift in Sources */,
+				6DA134D11E7E000900BDD41D /* HelpViewController.swift in Sources */,
+				6DA134CF1E7D93FF00BDD41D /* AboutUsViewController.swift in Sources */,
 				8DC7495B1E790D39005B7AE5 /* projectUtil.swift in Sources */,
 				6DA134CD1E7D422F00BDD41D /* CAGradientLayer.swift in Sources */,
 				6DA134CB1E7BD68500BDD41D /* AboutPageViewController.swift in Sources */,

@@ -12,6 +12,7 @@ import CoreData
 //import projectUtil
 
 class playMusicViewController: UIViewController {
+
     
     var audioPlayer : AVAudioPlayer!
     var isPlaying = false
@@ -64,16 +65,10 @@ class playMusicViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    func stopAfterNminutes(){
+        audioPlayer.stop()
+    }
+
     
     @IBAction func play(_ sender: Any) {
         
@@ -101,11 +96,8 @@ class playMusicViewController: UIViewController {
                 isPlaying = true
                 var audioPlayerTimer = Timer()
                 //set the timer for 300 sec/5 min
-                audioPlayerTimer = Timer.scheduledTimer(timeInterval: 300, target: self, selector: "stopAfter5minutes", userInfo: nil, repeats: false)
-                func stopAfter5minutes(){
-                    audioPlayer.stop()
-                }
-            } catch {
+                audioPlayerTimer = Timer.scheduledTimer(timeInterval: 300, target: self, selector: "stopAfterNminutes", userInfo: nil, repeats: false)
+                } catch {
                 // couldn't load file :(
                 print("unable to play")
             }//do catch ends
@@ -136,20 +128,13 @@ class playMusicViewController: UIViewController {
                 isPlaying = true
                 var audioPlayerTimer = Timer()
                 //set the timer for 300 sec/5 min
-                audioPlayerTimer = Timer.scheduledTimer(timeInterval: timed, target: self, selector: "stopAfter5minutes", userInfo: nil, repeats: false)
-                func stopAfter5minutes(){
-                    audioPlayer.stop()
-                }
+                audioPlayerTimer = Timer.scheduledTimer(timeInterval: timed, target: self, selector: "stopAfterNminutes", userInfo: nil, repeats: false)
+
             } catch {
                 // couldn't load file :(
                 print("unable to play")
             }//do catch ends
 
-            
-            
-            
-            
-            
         }
             
             // Jane's code
@@ -228,6 +213,7 @@ class playMusicViewController: UIViewController {
         audioPlayer.volume = sender.value
         }
     }
+    
     func addPoints(numOfPoints : Int, totalTime : Int) {
         if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
             newProgressPoints = ProgressPointsObjectMO(context: appDelegate.persistentContainer.viewContext)
