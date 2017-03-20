@@ -140,7 +140,7 @@ class playMusicViewController: UIViewController {
             // Jane's code
         else if projectUtil.originatingScreen == "hrufeeling" {
             if (audioPlayer == nil) {
-                addPoints(numOfPoints: Int(projectUtil.duration), totalTime: Int(projectUtil.duration))
+                addPoints(numOfPoints: Int(projectUtil.duration))
                 playSoundAsset(thisSong : projectUtil.songFileName)
             }
             else {
@@ -214,11 +214,11 @@ class playMusicViewController: UIViewController {
         }
     }
     
-    func addPoints(numOfPoints : Int, totalTime : Int) {
+    func addPoints(numOfPoints : Int) {
         if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
             newProgressPoints = ProgressPointsObjectMO(context: appDelegate.persistentContainer.viewContext)
             
-            newProgressPoints.progressTotalTime = Int16(totalTime)
+            newProgressPoints.progressTotalTime = Int16(numOfPoints)
             newProgressPoints.progressPoints = Int16(numOfPoints)
             newProgressPoints.progressDate = Date() as NSDate?
             appDelegate.saveContext()
@@ -254,5 +254,13 @@ class playMusicViewController: UIViewController {
         {
             audioPlayer.stop()
         }
+        if (audioPlayer != nil) {
+            var timeInMinutes : Double = audioPlayer.currentTime/60 + 1
+            
+            print("Audioplayer time rounded: \(Int(timeInMinutes))")
+            print("Audioplayer time: \(timeInMinutes)")
+            addPoints(numOfPoints: Int(timeInMinutes))
+        }
+
     }
 }
