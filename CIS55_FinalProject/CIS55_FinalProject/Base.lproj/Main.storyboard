@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zT3-Hg-IM1">
-    <device id="retina5_5" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zT3-Hg-IM1">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,66 +19,66 @@
                         <viewControllerLayoutGuide type="bottom" id="bT2-uv-ChT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kRG-8X-s8p">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGN-NO-4Ia">
-                                <rect key="frame" x="20" y="89" width="388" height="103"/>
+                                <rect key="frame" x="20" y="69" width="339" height="103"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Meditation  is a great way to improve health, reduce stress and increase happiness.  Slow down, drop your many distractions and take some time to embrace monotasking.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quick Start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEY-Fa-QXR">
-                                <rect key="frame" x="20" y="200" width="155" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJT-wd-TBE">
-                                <rect key="frame" x="20" y="200" width="366" height="142"/>
+                                <rect key="frame" x="20" y="186" width="341" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Relaxing songs and nature sounds are choosen for you at random.  This meditation experience lasts 5 minutes.  The meditation music stops to notify you that the meditation is complete.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <string key="text">Relaxing songs and nature sounds are choosen for you at random.  This meditation experience lasts 5 minutes.  The music stops when the meditation is complete.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timed Meditation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLn-Of-uzL">
-                                <rect key="frame" x="20" y="333" width="223" height="21"/>
+                                <rect key="frame" x="20" y="284" width="223" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlY-x5-kh5">
-                                <rect key="frame" x="20" y="342" width="381" height="117"/>
+                                <rect key="frame" x="18" y="288" width="341" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">You choose a 5, 10 or 15 minute meditation.  A selection of calm music and nature sounds are choosen at random. The meditation music stops to notify you when the meditation is complete. </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <string key="text">You choose a 5, 10 or 15 minute meditation.  A selection of calm music and nature sounds are choosen at random. The music stops when the meditation is complete. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How Are You Feeling?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rf-42-bXQ">
-                                <rect key="frame" x="20" y="464" width="294" height="21"/>
+                                <rect key="frame" x="20" y="398" width="294" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEQ-Lp-CyI">
-                                <rect key="frame" x="20" y="481" width="381" height="139"/>
+                                <rect key="frame" x="20" y="409" width="339" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Are you feeling happy, sad, stressed, calm, or lonely?  Guided meditations are selected to help you through difficult emotions and to make the most of positive emotions.  Sit in a comfortable position and experience the benefits of a guided meditation.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Free guided meditations available thanks to the UCLA Health Department." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjN-lX-6T0">
-                                <rect key="frame" x="20" y="615" width="380" height="51"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quick Start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEY-Fa-QXR">
+                                <rect key="frame" x="20" y="170" width="155" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Free guided meditations thanks to the UCLA Health." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjN-lX-6T0">
+                                <rect key="frame" x="20" y="547" width="350" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -88,26 +88,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CWx-dV-lkJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3424.6376811594205" y="-968.47826086956525"/>
+            <point key="canvasLocation" x="3422.65625" y="-969.72656249999989"/>
         </scene>
         <!--Feelings Table View Controller-->
         <scene sceneID="Sa0-kr-x7s">
             <objects>
                 <tableViewController id="Wub-Nr-ZzA" customClass="feelingsTableViewController" customModule="CIS55_FinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="72" sectionHeaderHeight="28" sectionFooterHeight="28" id="IrF-bR-WcT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myFeelingsCell" rowHeight="72" id="cj9-eG-b0D" customClass="FeelingsTableViewCell" customModule="CIS55_FinalProject" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="72"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="72"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cj9-eG-b0D" id="hwj-oU-ra0">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="71.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aYL-9h-s2T">
-                                            <rect key="frame" x="-1" y="-6.5" width="411" height="75"/>
+                                            <rect key="frame" x="-1.5" y="-7" width="372" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </imageView>
                                         <visualEffectView opaque="NO" alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wi7-1S-JKV">
@@ -154,7 +154,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <visualEffectView opaque="NO" alpha="0.25" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J5Z-L2-EnF">
@@ -263,7 +263,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Apo-ce-ZSR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ewU-2i-zeM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <visualEffectView opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fpC-OJ-9UF">
@@ -274,11 +274,11 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="noVolume" translatesAutoresizingMaskIntoConstraints="NO" id="2v3-W6-G5g">
-                                            <rect key="frame" x="83" y="590" width="22" height="20"/>
+                                            <rect key="frame" x="83" y="562" width="22" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="volume-1" translatesAutoresizingMaskIntoConstraints="NO" id="Rc9-dM-MZH">
-                                            <rect key="frame" x="313" y="590" width="22" height="20"/>
+                                            <rect key="frame" x="313" y="562" width="22" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
@@ -286,7 +286,7 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="IHU-OB-DgD">
-                                <rect key="frame" x="105" y="649" width="203" height="31"/>
+                                <rect key="frame" x="105" y="589" width="203" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="minimumTrackTintColor" red="0.28970391353097968" green="0.22913103108716201" blue="0.32580365838133141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="maximumTrackTintColor" red="0.46214238826306286" green="0.36551512418721815" blue="0.51972953680203049" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -295,7 +295,7 @@
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SnL-0T-38G">
-                                <rect key="frame" x="180" y="509" width="55" height="55"/>
+                                <rect key="frame" x="180" y="449" width="55" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.12632068991661072" green="0.042536117136478424" blue="0.22741970419883728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="play"/>
@@ -304,7 +304,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlp-LZ-Xq1">
-                                <rect key="frame" x="251" y="568" width="55" height="55"/>
+                                <rect key="frame" x="251" y="508" width="55" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.12632068991661072" green="0.042536117136478424" blue="0.22741970419883728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="stop"/>
@@ -313,7 +313,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koH-aY-e1k">
-                                <rect key="frame" x="107" y="568" width="55" height="55"/>
+                                <rect key="frame" x="107" y="508" width="55" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.12632068991661072" green="0.042536117136478424" blue="0.22741970419883728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="pause"/>
@@ -345,7 +345,7 @@
                         <viewControllerLayoutGuide type="bottom" id="sp6-i8-k33"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wtH-je-MIP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <visualEffectView opaque="NO" alpha="0.25" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j4b-gy-Y2H">
@@ -429,7 +429,7 @@
                         <viewControllerLayoutGuide type="bottom" id="OUq-VY-N71"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="esX-N9-RHy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Learn to Meditate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NO9-7x-mhR">
@@ -439,24 +439,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5K-7P-eu8">
-                                <rect key="frame" x="13" y="145" width="380" height="154"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5K-7P-eu8">
+                                <rect key="frame" x="12" y="138" width="336" height="143"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Meditation can happen anywhere.  Take a quick 5 minutes at work to do a breathing meditation.  Go for a short walk and meditate in the fresh air.   Allocate a time during the day for yourself.  Leave the responsibilities aside and appreciate the calm.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJn-sQ-zJM">
-                                <rect key="frame" x="12" y="394" width="383" height="137"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Make this a life-long goal to improve your health and focus.  Choose "How Are You Feeling?" mode for a guided meditation.  This will walk you through a proper meditation.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMo-Gz-d7R">
-                                <rect key="frame" x="12" y="288" width="380" height="127"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMo-Gz-d7R">
+                                <rect key="frame" x="13" y="278" width="337" height="143"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Close your eyes if you like.  Wear comfortable clothes and ensure that you are warm enough.  Proper body positioning: feet on the floor, uncrossed legs, back straight and supported.  Enjoy the experience.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -464,9 +456,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Learn To Meditate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1Y-6l-SJq">
-                                <rect key="frame" x="13" y="116" width="299" height="21"/>
+                                <rect key="frame" x="13" y="103" width="299" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJn-sQ-zJM">
+                                <rect key="frame" x="13" y="409" width="338" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Make this a life-long goal to improve your health and focus.  Choose "How Are You Feeling?" mode for a guided meditation.  This will walk you through a proper meditation.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -476,7 +476,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wlC-A7-ekh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2562.3188405797105" y="1278.2608695652175"/>
+            <point key="canvasLocation" x="2560.8000000000002" y="1277.8110944527737"/>
         </scene>
         <!--Progress View Controller-->
         <scene sceneID="AQX-D6-IzA">
@@ -487,7 +487,7 @@
                         <viewControllerLayoutGuide type="bottom" id="pER-k8-nMG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4IK-nn-vWB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -525,17 +525,17 @@
                         <viewControllerLayoutGuide type="bottom" id="D4k-8e-zxx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pXQ-If-siN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5uw-37-XYd">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8Me-Z6-z6y">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1472"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1334"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLC-Fc-wNB">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="368"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jan Thomas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPp-cj-4zJ">
                                                         <rect key="frame" x="201" y="89" width="160" height="21"/>
@@ -559,7 +559,7 @@
                                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJs-BK-gWo">
-                                                <rect key="frame" x="0.0" y="368" width="414" height="368"/>
+                                                <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nodira has been a QA engineer for 9 years.  Nodira's hobbies are hiking and reading." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhH-gV-VEo">
                                                         <rect key="frame" x="25" y="173" width="365" height="178"/>
@@ -583,7 +583,7 @@
                                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGC-Mc-cjl">
-                                                <rect key="frame" x="0.0" y="736" width="414" height="368"/>
+                                                <rect key="frame" x="0.0" y="667" width="375" height="333.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ankita Saundade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNk-DM-4XC">
                                                         <rect key="frame" x="201" y="89" width="174" height="32"/>
@@ -595,8 +595,8 @@
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="X28-vb-Flw">
                                                         <rect key="frame" x="25" y="173" width="365" height="178"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <mutableString key="text">What’s up, I’m Ankita. I’m a student living in Santa Clara, California. I am a fan of technology, photography, and travel. I’m also interested in programming. I always try to learn new things and these three things which is very closest to my heart makes me happy. Currently I am taking iOS Development class where I am learning to create iOS apps using Swift 3 and Xcode. 
-I worked as a web developer few years back but after I came to USA and had lot's of free time. I developed interest in blogging and started writing about food and travel. You can visit my blog here: https://trailoffoodandtravel.wordpress.com/</mutableString>
+                                                        <string key="text">What’s up, I’m Ankita. I’m a student living in Santa Clara, California. I am a fan of technology, photography, and travel. I’m also interested in programming. I always try to learn new things and these three things which is very closest to my heart makes me happy. Currently I am taking iOS Development class where I am learning to create iOS apps using Swift 3 and Xcode. 
+I worked as a web developer few years back but after I came to USA and had lot's of free time. I developed interest in blogging and started writing about food and travel. You can visit my blog here: https://trailoffoodandtravel.wordpress.com/</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
@@ -608,7 +608,7 @@ I worked as a web developer few years back but after I came to USA and had lot's
                                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="64U-xJ-Zzj">
-                                                <rect key="frame" x="0.0" y="1104" width="414" height="368"/>
+                                                <rect key="frame" x="0.0" y="1000.5" width="375" height="333.5"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pat" translatesAutoresizingMaskIntoConstraints="NO" id="Ou7-j4-328">
                                                         <rect key="frame" x="259" y="34" width="131" height="131"/>
