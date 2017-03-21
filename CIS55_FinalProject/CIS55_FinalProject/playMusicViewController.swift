@@ -140,7 +140,7 @@ class playMusicViewController: UIViewController {
             // Jane's code
         else if projectUtil.originatingScreen == "hrufeeling" {
             if (audioPlayer == nil) {
-                addPoints(numOfPoints: Int(projectUtil.duration))
+                //addPoints(numOfPoints: Int(projectUtil.duration))
                 playSoundAsset(thisSong : projectUtil.songFileName)
             }
             else {
