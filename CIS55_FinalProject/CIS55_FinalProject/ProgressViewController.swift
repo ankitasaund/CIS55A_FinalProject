@@ -39,6 +39,7 @@ class ProgressViewController: UIViewController, NSFetchedResultsControllerDelega
     }
     
     var beginningOfWeek = Date().startOfWeek
+    var today = NSCalendar.current.startOfDay(for: Date())
 
     
     var cellStats: [dataStats] = []
@@ -60,7 +61,7 @@ class ProgressViewController: UIViewController, NSFetchedResultsControllerDelega
     var myPoints : [ProgressPointsObjectMO] = []
     var dailyPoints: [ProgressPointsObjectMO] = []
     var weekPoints: [ProgressPointsObjectMO] = []
-    var monthPoints: ProgressPointsObjectMO!
+    var OverallPoints: ProgressPointsObjectMO!
     
     var fetchResultsController : NSFetchedResultsController<ProgressPointsObjectMO>!
     
@@ -101,7 +102,6 @@ class ProgressViewController: UIViewController, NSFetchedResultsControllerDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         let background = CAGradientLayer().skyColor()
         background.frame = self.view.bounds
@@ -146,45 +146,74 @@ class ProgressViewController: UIViewController, NSFetchedResultsControllerDelega
                 print(error)
             }
         }
+        //Prints Core Data to console
+        print("Core Data array:")
+        for i in 0..<myPoints.count{
+            print(myPoints[i].progressDate)
+            print(myPoints[i].progressPoints)
+            print(myPoints[i].progressTotalTime)
+        }
+
         
         
-        //First, take Core Data and add the points for a date (remove duplicates)
+        
         var  j = 0
         
-        
-        //zero-out time for date
+        //Zero-out time for date
         for thisProgressPoints in myPoints {
             let date = Date()
             let cal = Calendar(identifier: .gregorian)
             thisProgressPoints.progressDate = cal.startOfDay(for: thisProgressPoints.progressDate as! Date) as NSDate?
         }
         
-        
+        //If Core Data is not empty
         if (myPoints.count != 0)
         {
-            dailyPoints[0].progressDate = myPoints[0].progressDate
-            dailyPoints[0].progressPoints = myPoints[0].progressPoints
-            dailyPoints[0].progressTotalTime = myPoints[0].progressTotalTime
+            dailyPoints.append(myPoints[0])
         
-        
-        for i in 1..<myPoints.count{
+            //Remove duplicated entries from myPoints array
+            for i in 1..<myPoints.count{
             
-            if (myPoints[i].progressDate != myPoints[j].progressDate)
-            {
-                j += 1
-                dailyPoints[j] = myPoints[i]
-                dailyPoints[j].progressTotalTime += dailyPoints[j-1].progressTotalTime
+                if (myPoints[i].progressDate != myPoints[j].progressDate)
+                {
+                    j += 1
+                    dailyPoints.append(myPoints[i])
+                    dailyPoints[j].progressTotalTime += dailyPoints[j-1].progressTotalTime
+                }
+                else{
+                    dailyPoints[j].progressPoints += myPoints[i].progressPoints
+                    dailyPoints[j].progressTotalTime += myPoints[i].progressTotalTime
+                }
             }
-            else{
-                dailyPoints[j].progressPoints += myPoints[i].progressPoints
-                dailyPoints[j].progressTotalTime += myPoints[i].progressTotalTime
+            
+            //Prints dailyPoints Array to console
+            print("dailyPoints Array:")
+            for i in 0..<dailyPoints.count{
+                print(dailyPoints[i].progressDate)
+                print(dailyPoints[i].progressPoints)
+                print(dailyPoints[i].progressTotalTime)
             }
+            
+
+        
+            
+            
+            
+            //Displays information in the app
+            cellStats.append(dataStats(title: "Today", points: Int(dailyPoints[0].progressPoints), min:"min"))
+            cellStats.append(dataStats(title: "Weekly", points: 1, min:"min"))
+            cellStats.append(dataStats(title: "Overall", points: 1, min:"min"))
+            
         }
+        else {
+            //If there is no information in the CoreData
+            cellStats.append(dataStats(title: "Today", points: 0, min:"min"))
+            cellStats.append(dataStats(title: "Weekly", points: 0, min:"min"))
+            cellStats.append(dataStats(title: "Overall", points: 0, min:"min"))
         }
         
-        cellStats.append(dataStats(title: "Today", points: 1, min:"min"))
-        cellStats.append(dataStats(title: "Weekly", points: 1, min:"min"))
-        cellStats.append(dataStats(title: "Overall", points: 1, min:"min"))
+
+        
         
 
     }
@@ -193,6 +222,8 @@ class ProgressViewController: UIViewController, NSFetchedResultsControllerDelega
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
     
 
     /*
