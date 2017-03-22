@@ -105,7 +105,9 @@ class ViewController: UIViewController, NSFetchedResultsControllerDelegate  {
         }
         
         for thisProgressPoints in myPoints {
-            print("Points for today \(thisProgressPoints.progressDate) \(thisProgressPoints.progressPoints)\n")
+            //print("Points for today \(thisProgressPoints.progressDate) \(thisProgressPoints.progressPoints)\n")
+            print("Points:")
+            print(DateFormatter.localizedString(from: thisProgressPoints.progressDate as! Date, dateStyle: .short, timeStyle: .short))
         }
  
         
