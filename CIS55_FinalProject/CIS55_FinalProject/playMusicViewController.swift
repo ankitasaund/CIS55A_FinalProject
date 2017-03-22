@@ -221,6 +221,8 @@ class playMusicViewController: UIViewController {
             newProgressPoints.progressTotalTime = Int16(numOfPoints)
             newProgressPoints.progressPoints = Int16(numOfPoints)
             newProgressPoints.progressDate = Date() as NSDate?
+            
+            
             appDelegate.saveContext()
             print("Progress Points Added")
             
