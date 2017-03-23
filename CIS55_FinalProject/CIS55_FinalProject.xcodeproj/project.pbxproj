@@ -18,6 +18,7 @@
 		3DDD742B1E7AEFC400EF818C /* ProgressPointsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD742A1E7AEFC400EF818C /* ProgressPointsObject.swift */; };
 		3DF437DE1E735C6D00E8FF8B /* SongListObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF437DD1E735C6D00E8FF8B /* SongListObject.swift */; };
 		3DF437E81E797EC400E8FF8B /* feelingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF437E71E797EC400E8FF8B /* feelingsTableViewController.swift */; };
+		6D54987C1E83283F0049053D /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D54987B1E83283F0049053D /* GenericViewController.swift */; };
 		6D87F66D1E7A366A0050D755 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D87F66C1E7A366A0050D755 /* ProgressViewController.swift */; };
 		6DA134CD1E7D422F00BDD41D /* CAGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA134CC1E7D422F00BDD41D /* CAGradientLayer.swift */; };
 		6DA134CF1E7D93FF00BDD41D /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA134CE1E7D93FF00BDD41D /* AboutUsViewController.swift */; };
@@ -44,6 +45,7 @@
 		3DDD742A1E7AEFC400EF818C /* ProgressPointsObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressPointsObject.swift; sourceTree = "<group>"; };
 		3DF437DD1E735C6D00E8FF8B /* SongListObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongListObject.swift; sourceTree = "<group>"; };
 		3DF437E71E797EC400E8FF8B /* feelingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = feelingsTableViewController.swift; sourceTree = "<group>"; };
+		6D54987B1E83283F0049053D /* GenericViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
 		6D87F66C1E7A366A0050D755 /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		6DA134CC1E7D422F00BDD41D /* CAGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAGradientLayer.swift; sourceTree = "<group>"; };
 		6DA134CE1E7D93FF00BDD41D /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				6DA134CE1E7D93FF00BDD41D /* AboutUsViewController.swift */,
 				6DA134D81E81831400BDD41D /* StatisticsCollectionViewCell.swift */,
 				6D87F66C1E7A366A0050D755 /* ProgressViewController.swift */,
+				6D54987B1E83283F0049053D /* GenericViewController.swift */,
 				D527B12B1E79EA300015ACC6 /* TimedViewController.swift */,
 				3DDD74201E79A41F00EF818C /* FeelingsTableViewCell.swift */,
 				3DF437E71E797EC400E8FF8B /* feelingsTableViewController.swift */,
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D54987C1E83283F0049053D /* GenericViewController.swift in Sources */,
 				8DB180ED1E78842800977454 /* playMusicViewController.swift in Sources */,
 				3DDD74211E79A41F00EF818C /* FeelingsTableViewCell.swift in Sources */,
 				3D9E6E4A1E6E108D00A07DF1 /* CIS55_FinalProject.xcdatamodeld in Sources */,
