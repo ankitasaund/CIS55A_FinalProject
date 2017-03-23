@@ -10,14 +10,15 @@ import UIKit
 import CoreData
 
 
-extension Date {
+extension NSDate {
     struct Gregorian {
-        static let calendar = Calendar(identifier: .gregorian)
+        static let calendar = NSCalendar(calendarIdentifier: NSCalendar.Identifier.gregorian)!
     }
-    var startOfWeek: Date? {
-        return Gregorian.calendar.date(from: Gregorian.calendar.dateComponents([.yearForWeekOfYear, .weekOfYear], from: self))
+    var startOfWeek: NSDate {
+        return Gregorian.calendar.date(from: Gregorian.calendar.components([.yearForWeekOfYear, .weekOfYear ], from: self as Date))! as NSDate
     }
 }
+
 
 class ProgressViewController: UIViewController, NSFetchedResultsControllerDelegate, UICollectionViewDelegate,UICollectionViewDataSource {
  
@@ -38,30 +39,19 @@ class ProgressViewController: UIViewController, NSFetchedResultsControllerDelega
         var min: String
     }
     
-    var beginningOfWeek = Date().startOfWeek
     var today = NSCalendar.current.startOfDay(for: Date())
-
     
     var cellStats: [dataStats] = []
     var motivationalPhrases: [motivation] =
         [
             motivation(phrase:"Meditation is the discovery that the point of life is always arrived at in the immediate moment.", name:"ALAN WATTS"), motivation(phrase: "Meditation practice isn’t about trying to throw ourselves away and become something better, it’s about befriending who we are.", name: "ANI PEMA CHODRON"), motivation(phrase: "The you that goes in one side of the meditation experience is not the same you that comes out the other side.", name: "BHANTE HENEPOLA GUNARATANA"), motivation(phrase: "Meditation brings wisdom; lack of mediation leaves ignorance. Know well what leads you forward and what holds you back, and choose the path that leads to wisdom.", name: "BUDDHA"), motivation(phrase: "The things that trouble our spirits are within us already. In meditation, we must face them, accept them, and set them aside one by one.", name: "CRISTOPHER L BENNETT"), motivation(phrase: "Be conscious of yourself as consciousness alone, watch all the thoughts come and go. Come to the conclusion, by direct experience, that you are really consciousness itself, not its ephemeral contents.", name:"ANNAMALAI SWAMI"), motivation(phrase: "Meditation is not a way of making your mind quiet. It’s a way of entering into the quiet that’s already there – buried under the 50,000 thoughts the average person thinks every day.", name:"DEEPAK CHOPRA")
         ]
-    var listofAwards: [UIImage] = [
-        UIImage(named: "award")!,
-        UIImage(named: "award")!,
-        UIImage(named: "award")!,
-        UIImage(named: "award")!,
-        UIImage(named: "award")!,
-        UIImage(named: "award")!,
-        UIImage(named: "award")!,
-        UIImage(named: "award")!
-    ]
+    var awardPoint = [1,3,10,15,30,90,180,365]
+    var listofAwards: [UIImage] = []
     
     var myPoints : [ProgressPointsObjectMO] = []
     var dailyPoints: [ProgressPointsObjectMO] = []
-    var weekPoints: [ProgressPointsObjectMO] = []
-    var OverallPoints: ProgressPointsObjectMO!
+    var OverallPoints : Int16 = 0
     
     var fetchResultsController : NSFetchedResultsController<ProgressPointsObjectMO>!
     
@@ -71,7 +61,7 @@ class ProgressViewController: UIViewController, NSFetchedResultsControllerDelega
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         var count:Int?
         if collectionView == self.progressTrack{
-            return 3
+            return 2
         }
         if collectionView == self.progressAwards{
             return listofAwards.count
@@ -93,6 +83,7 @@ class ProgressViewController: UIViewController, NSFetchedResultsControllerDelega
         if collectionView == self.progressAwards{
             let cellB = progressAwards.dequeueReusableCell(withReuseIdentifier: "awardCell", for: indexPath) as! AwardCollectionViewCell
             cellB.awardImg.image = listofAwards[indexPath.row]
+            cellB.pointsAw.text = "\(awardPoint[indexPath.row])"
             return cellB
             
         }
@@ -192,32 +183,103 @@ class ProgressViewController: UIViewController, NSFetchedResultsControllerDelega
                 print(dailyPoints[i].progressDate)
                 print(dailyPoints[i].progressPoints)
                 print(dailyPoints[i].progressTotalTime)
+                OverallPoints += dailyPoints[i].progressTotalTime
             }
             
 
-        
-            
-            
-            
             //Displays information in the app
-            cellStats.append(dataStats(title: "Today", points: Int(dailyPoints[0].progressPoints), min:"min"))
-            cellStats.append(dataStats(title: "Weekly", points: 1, min:"min"))
-            cellStats.append(dataStats(title: "Overall", points: 1, min:"min"))
+            //Last day in the array should be the current day
+            cellStats.append(dataStats(title: "Today", points: Int(dailyPoints[dailyPoints.count-1].progressPoints), min:"min"))
             
+            
+            
+            //Just add all progressTotalTime
+            cellStats.append(dataStats(title: "Overall", points: Int(OverallPoints), min:"min"))
+         
+            //Depending on the number of days the user has used the app give them awards
+            if (dailyPoints.count < awardPoint[0])
+            {
+                for i in 0...7{
+                listofAwards.append(#imageLiteral(resourceName: "grayscaleAward"))
+                }
+            }
+            else if (dailyPoints.count < awardPoint[1])
+            {
+                listofAwards.append(#imageLiteral(resourceName: "award"))
+                for i in 0...6{
+                    listofAwards.append(#imageLiteral(resourceName: "grayscaleAward"))
+                }
+            }
+            else if (dailyPoints.count < awardPoint[2])
+            {
+                listofAwards.append(#imageLiteral(resourceName: "award"))
+                listofAwards.append(#imageLiteral(resourceName: "award"))
+                for i in 0...5{
+                    listofAwards.append(#imageLiteral(resourceName: "grayscaleAward"))
+                }
+            }
+            else if (dailyPoints.count < awardPoint[3])
+            {
+                listofAwards.append(#imageLiteral(resourceName: "award"))
+                listofAwards.append(#imageLiteral(resourceName: "award"))
+                listofAwards.append(#imageLiteral(resourceName: "award"))
+                for i in 0...4{
+                    listofAwards.append(#imageLiteral(resourceName: "grayscaleAward"))
+                }
+            }
+            else if (dailyPoints.count < awardPoint[4])
+            {
+                listofAwards.append(#imageLiteral(resourceName: "award"))
+                listofAwards.append(#imageLiteral(resourceName: "award"))
+                listofAwards.append(#imageLiteral(resourceName: "award"))
+                listofAwards.append(#imageLiteral(resourceName: "award"))
+                for i in 0...3{
+                    listofAwards.append(#imageLiteral(resourceName: "grayscaleAward"))
+                }
+            }
+            else if (dailyPoints.count < awardPoint[5])
+            {
+                listofAwards.append(#imageLiteral(resourceName: "award"))
+                listofAwards.append(#imageLiteral(resourceName: "award"))
+                listofAwards.append(#imageLiteral(resourceName: "award"))
+                listofAwards.append(#imageLiteral(resourceName: "award"))
+                listofAwards.append(#imageLiteral(resourceName: "award"))
+                for i in 0...2{
+                    listofAwards.append(#imageLiteral(resourceName: "grayscaleAward"))
+                }
+            }
+            else if (dailyPoints.count < awardPoint[6])
+            {
+                for i in 0...5{
+                    listofAwards.append(#imageLiteral(resourceName: "award"))
+                }
+                listofAwards.append(#imageLiteral(resourceName: "grayscaleAward"))
+                listofAwards.append(#imageLiteral(resourceName: "grayscaleAward"))
+            }
+            else if (dailyPoints.count < awardPoint[7])
+            {
+                for i in 0...6{
+                listofAwards.append(#imageLiteral(resourceName: "award"))
+                }
+                listofAwards.append(#imageLiteral(resourceName: "grayscaleAward"))
+            
+            }
+            else{
+                for i in 0...7{
+                    listofAwards.append(#imageLiteral(resourceName: "award"))
+                }
+            }
+
         }
         else {
             //If there is no information in the CoreData
             cellStats.append(dataStats(title: "Today", points: 0, min:"min"))
-            cellStats.append(dataStats(title: "Weekly", points: 0, min:"min"))
             cellStats.append(dataStats(title: "Overall", points: 0, min:"min"))
         }
         
-
-        
-        
-
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

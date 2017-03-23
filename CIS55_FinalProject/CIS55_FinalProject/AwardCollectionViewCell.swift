@@ -11,5 +11,5 @@ import UIKit
 class AwardCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var awardImg: UIImageView!
-    
+    @IBOutlet var pointsAw: UILabel!
 }
